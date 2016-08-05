@@ -1,1 +1,10 @@
-console.log("Hello from src/app.js");
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Counter from './Counter';
+ 
+document.addEventListener('DOMContentLoaded', function() {
+  ReactDOM.render(
+    <NavBar />,
+    document.getElementById('mount')
+  );
+});

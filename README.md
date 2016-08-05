@@ -9,6 +9,13 @@ Rough Draft:
 -Improvement Code
 -What it does (goal, how, why)
 -The stats, benchmarks, improvements
+
+Start
+---
+ 
+```
+npm start
+```
  
 Setup
 ---
