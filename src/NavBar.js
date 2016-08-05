@@ -1,4 +1,5 @@
 import React from 'react';
+import AppBar from 'material-ui/AppBar';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -7,7 +8,10 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div>This is the NavBar component.</div>
+      <AppBar
+        title="Title"
+        iconClassNameRight="muidocs-icon-navigation-expand-more"
+      />
     );
   }
 }
