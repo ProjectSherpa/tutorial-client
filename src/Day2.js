@@ -4,16 +4,16 @@ import React, { PropTypes } from 'react';
 import Video from './Video';
 
 
-class Day1 extends React.Component {
+class Day2 extends React.Component {
 
 
   render() {
     return (
       <div className="post">
         
-        <h2>DAY 1: Virtual Machines Made Easy</h2>
+        <h2>DAY 2: SherpaSherpa</h2>
 
-        <h3>Introduction</h3>
+        <h3>Content for Day 2</h3>
         <p>What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components.</p>
         <br />
         <div className='javascript'>
@@ -54,4 +54,4 @@ class Day1 extends React.Component {
   }
 }
 
-export default Day1;
+export default Day2;
