@@ -1,12 +1,18 @@
 import React, { PropTypes } from 'react';
 //var Highlight = require('react-highlight');
 
+//var WebTorrent = require('webtorrent');
+
 import Video from './Video';
 import RenderMarkdown from './RenderMarkdown';
 
 class Day1 extends React.Component {
 	constructor(props) {
     super(props);
+    console.log('hello from Day 1');
+    this.state = {
+    	video: {}
+    }
     this.code = `
 		var preorderTraversal = function(root) {
 		    var array = [];
@@ -31,13 +37,36 @@ class Day1 extends React.Component {
 		    }while(array.length > 0)
 		    
 		    return ans;
-		};
-			         `
+		};	         `
+
+		this.startTorrent = this.startTorrent.bind(this);
+
   }
-  
+  componentDidMount(){
+  	this.startTorrent();
+  }
+
+  startTorrent(){
+  	var client = new WebTorrent();
+    var torrentId = 'magnet:?xt=urn:btih:9f92eb86683d64972a0bbcb49598175dc622af4e&dn=03+Avalanche+Testing+2+compressed.mp4&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.webtorrent.io'
+    var video;
+    var that = this;
+
+  	client.add(torrentId, function (torrent) {
+  	  // do something with the torrent
+      video = torrent.files[0];
+      that.setState({video: video});
+
+  	});	  
+  }
+
+
    
 
   render() {
+  	if (this.state) {
+  	  console.log('VIDEO: ', this.state.video);
+    }
     return (
       <div className="post">
         
