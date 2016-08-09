@@ -1,22 +1,71 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import NavBar from './NavBar';
-import injectTapEventPlugin from 'react-tap-event-plugin';
+import { Router, Route, Link, IndexLink, IndexRoute, hashHistory } from 'react-router';
 
-// Needed for onTouchTap
-// http://stackoverflow.com/a/34015469/988941
-injectTapEventPlugin();
- 
-const App = () => (
-  <MuiThemeProvider>
-    <NavBar />
-  </MuiThemeProvider>
-);
+import ContentContainer from './ContentContainer';
+import {Col} from 'react-bootstrap';
+
+import Header from './Header';
+import SideBar from './SideBar';
+
+
+import Introduction from './Introduction';
+import Vocab from './Vocab';
+import Day1 from './Day1';
+import Day2 from './Day2';
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+		    <Header /> 
+	      <Col xs={4} md={2}>
+	        <SideBar />
+	      </Col>
+	      <Col xs={8} md={10}>
+	        <div>
+	          <ContentContainer />
+	        </div>
+	        <div>
+	          {this.props.children}
+	        </div>
+	      </Col>
+		  </div>
+    );
+  }
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-    <App />,
+    <Router>
+      <Route path="/" component={App}>
+        <IndexRoute component={Introduction}/>
+      </Route>
+      <Route path="/introduction" component={App}>
+        <IndexRoute component={Introduction}/>
+      </Route>
+      <Route path="/vocab" component={App}>
+        <IndexRoute component={Vocab}/>
+      </Route>
+      <Route path="/day1" component={App}>
+        <IndexRoute component={Day1}/>
+      </Route>
+      <Route path="/day2" component={App}>
+        <IndexRoute component={Day2}/>
+      </Route>
+    </Router>,
     document.getElementById('mount')
   );
 });
+
+
+
+
+
+
+
