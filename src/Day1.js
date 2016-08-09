@@ -74,6 +74,8 @@ class Day1 extends React.Component {
 
         <h3>Introduction</h3>
 
+        <video src={this.state.video} type='good luck'></video>
+
         <RenderMarkdown markdown={this.code}/>
         
         <p>What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components.</p>
