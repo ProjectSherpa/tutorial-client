@@ -74,8 +74,13 @@ class Day1 extends React.Component {
 
         <h3>Introduction</h3>
 
-        <video src={this.state.video} type='good luck'></video>
-
+        <video id="example_video_1" className="video-js vjs-default-skin"
+            controls preload="auto" width="1080" height="620"
+            poster=""
+            data-setup='{"example_option":true}'>
+            <source src="https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/vagrantpart1264.mp4" type='video/mp4' />
+        </video>
+        <br />
         <RenderMarkdown markdown={this.code}/>
         
         <p>What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components.</p>
@@ -83,8 +88,6 @@ class Day1 extends React.Component {
         <div className='javascript'>
           
         </div>
-        <br />
-        <Video />
         <br />
         <p>"What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components."</p>
 

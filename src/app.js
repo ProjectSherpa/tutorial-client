@@ -23,14 +23,14 @@ export default class App extends React.Component {
     return (
       <div>
 		    <Header /> 
-	      <Col xs={4} md={2}>
+	      <Col xs={4} md={2} className="sidebar">
 	        <SideBar />
 	      </Col>
-	      <Col xs={8} md={10}>
+	      <Col xs={8} md={10} className="content-body">
 	        <div>
 	          <ContentContainer />
 	        </div>
-	        <div>
+	        <div className="post-body">
 	          {this.props.children}
 	        </div>
 	      </Col>
