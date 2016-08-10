@@ -14,9 +14,16 @@ Rough Draft:
 Docker - First install docker then:
 ---
 
+Build Docker image from directory wherere Dockerfile resides in:
+docker build -t sherpa/node-web-app .
+
+Then run with:
 ```
 docker run -p 4000:4000 -d sherpa/node-web-app
 ```
+
+You can check if its running by typing 
+docker ps
 
 Start
 ---
