@@ -14,6 +14,28 @@ import Vocab from './Vocab';
 import Day1 from './Day1';
 import Day2 from './Day2';
 
+import SplashHeader from './SplashComponents/SplashHeader';
+import SplashContent from './SplashComponents/SplashContent';
+import Signup from './SplashComponents/Signup';
+import Login from './SplashComponents/Login';
+
+export default class Splash extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <SplashHeader /> 
+        <div className="splash-body">
+          {this.props.children}
+        </div>
+      </div>
+    );
+  }
+}
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -43,9 +65,16 @@ export default class App extends React.Component {
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
     <Router>
-      <Route path="/" component={App}>
-        <IndexRoute component={Introduction}/>
+      <Route path="/" component={Splash}>
+        <IndexRoute component={SplashContent}/>
       </Route>
+      <Route path="/login" component={Splash}>
+        <IndexRoute component={Login}/>
+      </Route>
+      <Route path="/signup" component={Splash}>
+        <IndexRoute component={Signup}/>
+      </Route>
+
       <Route path="/introduction" component={App}>
         <IndexRoute component={Introduction}/>
       </Route>
