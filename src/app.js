@@ -16,6 +16,7 @@ import Day2 from './Day2';
 
 import SplashHeader from './SplashComponents/SplashHeader';
 import SplashContent from './SplashComponents/SplashContent';
+import Signup from './SplashComponents/Signup';
 import Login from './SplashComponents/Login';
 
 export default class Splash extends React.Component {
@@ -69,6 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
       </Route>
       <Route path="/login" component={Splash}>
         <IndexRoute component={Login}/>
+      </Route>
+      <Route path="/signup" component={Splash}>
+        <IndexRoute component={Signup}/>
       </Route>
 
       <Route path="/introduction" component={App}>

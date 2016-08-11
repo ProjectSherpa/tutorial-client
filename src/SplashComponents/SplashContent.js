@@ -12,13 +12,13 @@ export default function SplashContent (props) {
           </Col>
           
           <Col md={8} className="panel-right">
-            <h1 className="pitch">Learn system architecture with your very own sherpas to lead the way</h1>
+            <h1 className="pitch">Learn system architecture with your very own sherpas leading the way</h1>
           </Col>
           <Col md={1}></Col>
         </Row>
         
         <Row className="content inner-container">
-          <h1 className="splash-header">You'll learn and build with many concepts and technologies...</h1>
+          <h1 className="splash-header">You'll learn and build using the following concepts and technologies...</h1>
           <div className="splash-content">
 	            
 	            <ul className="list-unstyled splash-techs">

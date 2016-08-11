@@ -37,4 +37,14 @@ body {
 .jumbotron h1 {
   font-size: 55px;
 }
+.login {
+    margin: 20px 0 20px 0;
+    height: 50px;
+}
+.signup-logo {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
 
