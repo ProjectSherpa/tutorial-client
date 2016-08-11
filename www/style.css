@@ -1,3 +1,7 @@
+body {
+	font-family: Roboto;
+}
+
 .navbar {
 	margin-bottom: 0px;
 }
@@ -20,3 +24,17 @@
 .btn {
 	line-height: 2.5;
 }
+.splash-header {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.splash-content {
+  display: flex;
+  justify-content: space-around; 
+  font-size: 28px;
+}
+.jumbotron h1 {
+  font-size: 55px;
+}
+

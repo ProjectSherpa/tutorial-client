@@ -1,10 +1,19 @@
 import React, { PropTypes } from 'react'
-import {ButtonGroup, Button, DropdownButton, MenuItem} from 'react-bootstrap';
+import {ButtonGroup, Button, DropdownButton, MenuItem, ProgressBar} from 'react-bootstrap';
 import {Link} from 'react-router';
 
 export default function SideBar (props) {
   return (
     	<ButtonGroup vertical block>
+        
+
+        <Button>
+          <span>Scalability Course Progress</span>
+          <ProgressBar  bsStyle="success" now={40} label={`${40}%`} />
+        </Button>
+
+        
+
   	    <Button><Link to="/introduction">Introduction</Link></Button>
   	    <Button><Link to="/vocab">Scalability Vocab</Link></Button>
         <Button><Link to="/day1">Day 1</Link></Button>

@@ -80,6 +80,7 @@ class Day1 extends React.Component {
             data-setup='{"example_option":true}'>
             <source src="https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/vagrantpart1264.mp4" type='video/mp4' />
         </video>
+        
         <br />
         <RenderMarkdown markdown={this.code}/>
         

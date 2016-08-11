@@ -5,7 +5,7 @@ export default function ContentContainer (props) {
   return (
     <div>
       <ButtonGroup justified>
-         <Button href="#"><span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span>   Previous Lesson</Button>
+         <Button href="#"><span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span>   Mark complete and continue</Button>
          <Button href="#">Next Lesson   <span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span></Button>
        </ButtonGroup>
     </div>
