@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "webpack --watch",
     "start": "nodemon server.js",
+    "startgo": "webpack --optimize-minimize --colors | ./serveGo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
