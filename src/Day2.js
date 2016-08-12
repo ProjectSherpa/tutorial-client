@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import RenderMarkdown from './RenderMarkdown';
 import Video from './Video';
 
+import LockedContent from './LockedContent';
+
 
 class Day2 extends React.Component {
   constructor(props) {
@@ -37,6 +39,12 @@ class Day2 extends React.Component {
   }
 
   render() {
+  	if(true) {
+  		return (
+  			<LockedContent />
+  		)
+  	}
+
     return (
       <div className="post">
         

@@ -4,7 +4,7 @@ import React, { PropTypes } from 'react';
 import Video from './Video';
 
 
-class Introduction extends React.Component {
+export default class Introduction extends React.Component {
   constructor(props) {
     super(props);
     this.code = `
@@ -56,5 +56,3 @@ class Introduction extends React.Component {
     );
   }
 }
-
-export default Introduction;
