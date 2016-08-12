@@ -24,7 +24,7 @@ export default class Login extends React.Component {
 	  });
   }
 
-  onFormSubmit(e) {
+  logIn(e) {
     console.log('fetch post sent to /api/login');
     e.preventDefault();
     const { email, password } = this.state;
@@ -57,14 +57,14 @@ export default class Login extends React.Component {
 	              />
 
 	              <FormControl className="login"
-	                type="text"
+	                type="password"
 	                value={this.state.password}
 	                placeholder="Password"
 	                onChange={this.handlePassword.bind(this)}
 	              />
 
 								<div style={{}}>
-	                <Button block bsStyle="success" onClick={this.onFormSubmit}>
+	                <Button block bsStyle="success" onClick={this.logIn}>
 	                  Log in
 	                </Button>
 	              </div>

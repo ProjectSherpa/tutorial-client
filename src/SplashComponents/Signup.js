@@ -40,7 +40,7 @@ export default class Signup extends React.Component {
 	  });
   }
 
-  onFormSubmit(e) {
+  signIn(e) {
     console.log('fetch post sent to /api/signup');
     e.preventDefault();
     fetch('/api/signup', {
@@ -84,14 +84,14 @@ export default class Signup extends React.Component {
 	                />
 
 	                <FormControl className="login" 
-	                  type="text"
+	                  type="password"
 	                  value={this.state.password}
 	                  placeholder="Password"
 	                  onChange={this.handlePassword.bind(this)}
 	                />
 
 	                <FormControl className="login"
-	                  type="text"
+	                  type="password"
 	                  value={this.state.confirm}
 	                  placeholder="Confirm Password"
 	                  onChange={this.handleConfirm.bind(this)}
@@ -99,7 +99,7 @@ export default class Signup extends React.Component {
 	              </FormGroup>
 
 	              <div style={{}}>
-	                <Button block bsStyle="success" onClick={this.onFormSubmit}>
+	                <Button block bsStyle="success" onClick={this.signIn}>
 	                  Sign up
 	                </Button>
 	              </div>
