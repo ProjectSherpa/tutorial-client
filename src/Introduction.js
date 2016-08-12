@@ -1,8 +1,4 @@
 import React, { PropTypes } from 'react';
-//var Highlight = require('react-highlight');
-
-import Video from './Video';
-
 
 export default class Introduction extends React.Component {
   constructor(props) {
@@ -43,13 +39,7 @@ export default class Introduction extends React.Component {
 
         <h3>How to make use of your Sherpa</h3>
         <p>What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components.</p>
-        <br />
-        <div className='javascript'>
-          
-        </div>
-        <br />
-        <Video />
-        <br />
+        
         <p>"What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components."</p>
 
       </div>
