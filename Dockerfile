@@ -15,9 +15,8 @@ RUN npm install
 COPY . /usr/src/app
 
 
-
-EXPOSE 8585
-RUN npm run startgo
+EXPOSE 4000
+CMD [ "npm","start" ]
 
 
 

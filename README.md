@@ -22,6 +22,12 @@ docker ps
 cAdvisor is also installed and is running on port 8080
 https://github.com/google/cadvisor
 
+#Go to Server static content
+The main website load speeds went from 3 seconds to sub 1 seconds by
+docker compose up is serving the content using https://golang.org/
+
+
+
 Start
 ---
 
