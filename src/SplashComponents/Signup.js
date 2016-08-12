@@ -11,7 +11,7 @@ export default class Signup extends React.Component {
       password: '',
       confirm: ''
     }
-    this.onFormSubmit = this.onFormSubmit.bind(this);
+    this.signIn = this.signIn.bind(this);
   }
   
   // form field handlers

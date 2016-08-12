@@ -9,7 +9,7 @@ export default class Login extends React.Component {
       email: '',
       password: ''
     }
-    this.onFormSubmit = this.onFormSubmit.bind(this);
+    this.logIn = this.logIn.bind(this);
   }
 
   handleEmail(e) {
@@ -52,7 +52,7 @@ export default class Login extends React.Component {
 		          	<FormControl className="login"
 	                type="text"
 	                value={this.state.name}
-	                placeholder="Full Name"
+	                placeholder="Email Address"
 	                onChange={this.handleEmail.bind(this)}
 	              />
 
