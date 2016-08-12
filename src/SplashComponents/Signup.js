@@ -41,15 +41,23 @@ export default class Signup extends React.Component {
   }
 
   onFormSubmit(e) {
-    console.log('Form Submitted');
-    //e.preventDefault();
-    //this.close();
-    //const { title, text } = this.state;
-    //this.props.onSubmit({ title, text });
+    console.log('fetch post sent to /api/signup');
+    e.preventDefault();
+    fetch('/api/signup', {
+      method: 'POST',
+      headers: {'content-type': 'application/json'},
+      body: JSON.stringify({ 
+      	name: this.state.name, 
+      	email: this.state.email, 
+      	password: this.state.password 
+      }),
+    })
+    .then(res => res.json())
+    .then(body => {
+      // sessions or jwt here?
+    });
+
   }
-
-  
-
 
   render() {
 	  return (
@@ -97,7 +105,7 @@ export default class Signup extends React.Component {
 	              </div>
             </form>
 
-	          	  <p>Already have an account? <Link to="/login">Log in</Link></p>
+	          	  <p className="signup-question">Already have an account? <Link className="space" to="/login">Log in</Link></p>
 	          
 	          </Col>
 	          <Col md={4}></Col>

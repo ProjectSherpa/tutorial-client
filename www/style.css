@@ -46,5 +46,13 @@ body {
   justify-content: center;
   margin: 30px auto;
 }
+.signup-question {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+.space {
+  margin-left: 5px;
+}
 
 
