@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react';
 //var Highlight = require('react-highlight');
 
 import RenderMarkdown from './RenderMarkdown';
-import Video from './Video';
+
+import LockedContent from './LockedContent';
 
 
 class Day2 extends React.Component {
@@ -37,6 +38,12 @@ class Day2 extends React.Component {
   }
 
   render() {
+  	if(true) {
+  		return (
+  			<LockedContent />
+  		)
+  	}
+
     return (
       <div className="post">
         
@@ -48,9 +55,6 @@ class Day2 extends React.Component {
 
         <RenderMarkdown markdown={this.code}/>
 
-        <br />
-        <Video />
-        <br />
         <p>"What makes React so convenient for building user interfaces is that data is either received from a component’s parent component, or it’s contained in the component itself. Before we jump into code, let’s make sure we have a high level understanding of components."</p>
 
       </div>

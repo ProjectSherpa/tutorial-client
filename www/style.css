@@ -46,5 +46,23 @@ body {
   justify-content: center;
   margin: 30px auto;
 }
+.signup-question {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+}
+.space {
+  margin-left: 5px;
+}
+.lock-jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto;
+}
+.locked-enroll {
+  margin-top: 20px;
+  border-radius: 25px;
+}
 
 
