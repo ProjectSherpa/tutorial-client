@@ -36,29 +36,29 @@ app.use(webpackDevMiddleware(compiler, {
 //  DB
 //////////////////////////////////////
 
-var Sequelize = require('sequelize')
-  , sequelize = new Sequelize('sherpatest', 'root', '', {
-      dialect: "mysql", 
-      port:    3306, 
-    });
+// var Sequelize = require('sequelize')
+//   , sequelize = new Sequelize('sherpatest', 'root', '', {
+//       dialect: "mysql", 
+//       port:    3306, 
+//     });
 
-var User = sequelize.define('user', {
-  name: Sequelize.STRING,
-  email: Sequelize.STRING,
-  password: Sequelize.STRING
-});
+// var User = sequelize.define('user', {
+//   name: Sequelize.STRING,
+//   email: Sequelize.STRING,
+//   password: Sequelize.STRING
+// });
 
-sequelize.sync().then(function() {
-  return User.create({
-    name: 'jane doe',
-    email: 'jane@jane.com',
-    password: 'testpass'
-  });
-}).then(function(jane) {
-  console.log(jane.get({
-    plain: true
-  }));
-});
+// sequelize.sync().then(function() {
+//   return User.create({
+//     name: 'jane doe',
+//     email: 'jane@jane.com',
+//     password: 'testpass'
+//   });
+// }).then(function(jane) {
+//   console.log(jane.get({
+//     plain: true
+//   }));
+// });
 
 //////////////////////////////////////
 //  Routes
