@@ -11,19 +11,22 @@ Rough Draft:
 -The stats, benchmarks, improvements
 
 
-Docker - First install docker then:
+Docker - uses docker compose:
 ---
 
-Build Docker image from directory wherere Dockerfile resides in:
-docker build -t sherpa/node-web-app .
+docker compose up
 
-Then run with:
-```
-docker run -p 4000:4000 -d sherpa/node-web-app
-```
-
-You can check if its running by typing 
+You can check if its running by typing
 docker ps
+
+cAdvisor is also installed and is running on port 8080
+https://github.com/google/cadvisor
+
+#Go to Server static content
+The main website load speeds went from 3 seconds to sub 1 seconds by
+docker compose up is serving the content using https://golang.org/
+
+
 
 Start
 ---
