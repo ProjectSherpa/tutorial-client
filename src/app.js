@@ -1,18 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexLink, IndexRoute, hashHistory } from 'react-router';
-
-import ContentContainer from './ContentContainer';
 import {Col} from 'react-bootstrap';
 
+// Persistent Components
+import ContentContainer from './ContentContainer';
 import Header from './Header';
 import SideBar from './SideBar';
 
+// Getting Started Components
+import Resources from './getting-started/Resources';
+import Intro from './getting-started/Intro';
+import Overview from './getting-started/Overview';
+import CodeAlong1 from './getting-started/CodeAlong1';
+import CodeAlong2 from './getting-started/CodeAlong2';
+import CodeAlong3 from './getting-started/CodeAlong3';
+import Wrapup from './getting-started/Wrapup';
 
-import Introduction from './Introduction';
-import Vocab from './Vocab';
-import Day1 from './Day1';
-import Day2 from './Day2';
+// Vertical Scaling Components
+
+// Isolation of Services Components
+
+// Content Delivery Components
+
+
+
+
+
+
 
 import SplashHeader from './SplashComponents/SplashHeader';
 import SplashContent from './SplashComponents/SplashContent';
@@ -45,17 +60,19 @@ export default class App extends React.Component {
     return (
       <div>
 		    <Header /> 
-	      <Col xs={4} md={2} className="sidebar">
-	        <SideBar />
-	      </Col>
-	      <Col xs={8} md={10} className="content-body">
-	        <div>
-	          <ContentContainer />
-	        </div>
-	        <div className="post-body">
-	          {this.props.children}
-	        </div>
-	      </Col>
+        <div className="page-content">
+  	      <Col xs={4} md={2} className="sidebar">
+  	        <SideBar />
+  	      </Col>
+  	      <Col xs={8} md={10} className="content-body">
+  	        <div>
+  	          <ContentContainer />
+  	        </div>
+  	        <div className="post-body">
+  	          {this.props.children}
+  	        </div>
+  	      </Col>
+        </div>
 		  </div>
     );
   }
@@ -75,18 +92,29 @@ document.addEventListener('DOMContentLoaded', function() {
         <IndexRoute component={Signup}/>
       </Route>
 
-      <Route path="/introduction" component={App}>
-        <IndexRoute component={Introduction}/>
+
+      <Route path="/gettingstarted/resources" component={App}>
+        <IndexRoute component={Resources}/>
       </Route>
-      <Route path="/vocab" component={App}>
-        <IndexRoute component={Vocab}/>
+      <Route path="/gettingstarted/intro" component={App}>
+        <IndexRoute component={Intro}/>
       </Route>
-      <Route path="/day1" component={App}>
-        <IndexRoute component={Day1}/>
+      <Route path="/gettingstarted/overview" component={App}>
+        <IndexRoute component={Overview}/>
       </Route>
-      <Route path="/day2" component={App}>
-        <IndexRoute component={Day2}/>
+      <Route path="/gettingstarted/codealong1" component={App}>
+        <IndexRoute component={CodeAlong1}/>
       </Route>
+      <Route path="/gettingstarted/codealong2" component={App}>
+        <IndexRoute component={CodeAlong2}/>
+      </Route>
+      <Route path="/gettingstarted/codealong3" component={App}>
+        <IndexRoute component={CodeAlong3}/>
+      </Route>
+      <Route path="/gettingstarted/wrapup" component={App}>
+        <IndexRoute component={Wrapup}/>
+      </Route>
+
     </Router>,
     document.getElementById('mount')
   );

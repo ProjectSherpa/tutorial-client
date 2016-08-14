@@ -28,7 +28,6 @@ export default class Login extends React.Component {
     console.log('fetch post sent to /api/login');
     e.preventDefault();
     const { email, password } = this.state;
-    console.log({email, password});
     fetch('/api/login', {
       method: 'POST',
       headers: {'content-type': 'application/json'},

@@ -16,7 +16,7 @@ export default class SplashHeader extends React.Component {
         <Nav pullLeft>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#"><h4>Scalability Sherpa</h4></a>
+              <a href="#"><h4>Shrpa.io</h4></a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

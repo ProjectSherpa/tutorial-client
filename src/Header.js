@@ -15,7 +15,7 @@ class Header extends React.Component {
         <Nav pullLeft>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Scalability Sherpa</a>
+              <a href="#">Logo/Home</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

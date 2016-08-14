@@ -1,5 +1,11 @@
 body {
 	font-family: Roboto;
+  width: 100vw;
+  height: 100vh;
+}
+.mount {
+  width: 100%;
+  height: 100%;
 }
 
 .navbar {
@@ -8,6 +14,8 @@ body {
 .sidebar {
 	padding-right: 0px;
 	padding-left: 0px;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 
 .content-body {
@@ -16,13 +24,18 @@ body {
 }
 
 .post-body {
-	padding-top: 5px;
-	padding-right: 30px;
-	padding-left: 30px;
+	margin-top: 5px;
+	margin-right: 15px;
+	margin-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: white;
 }
 
 .btn {
 	line-height: 2.5;
+  width: 100%;
 }
 .splash-header {
   font-size: 34px;
@@ -63,6 +76,27 @@ body {
 .locked-enroll {
   margin-top: 20px;
   border-radius: 25px;
+}
+.panel-headings {
+  margin-bottom: 0px;
+}
+.button-left {
+  text-align: left;
+}
+.indent {
+  margin-left: 15%;
+}
+.video-js {
+  width: 1080;
+  height: 720;
+}
+.scroll {
+  height: 100vh;
+  max-height: 100vh;
+}
+.wide {
+  width: 1080px;
+  height: 720px;
 }
 
 
