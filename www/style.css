@@ -87,16 +87,16 @@ body {
   margin-left: 15%;
 }
 .video-js {
-  width: 1080;
-  height: 720;
+  width: 855;
+  height: 480;
 }
 .scroll {
   height: 100vh;
   max-height: 100vh;
 }
 .wide {
-  width: 1080px;
-  height: 720px;
+  width: 855px;
+  height: 480px;
 }
 
 

@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import Video from '../Video';
 import RenderMarkdown from '../RenderMarkdown';
 
-export default class Wrapup extends React.Component {
+export default class VerticalAction extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +21,9 @@ export default class Wrapup extends React.Component {
     
     return (
       <div className="post">
-        <h2>Module Wrapup</h2>
+        <h2>Vertical Scaling In Action</h2>
+        <Video className="wide" video={this.state.vidURL} screenshot={this.state.screenshot}/>
+        <h3></h3>
       </div>
     );
   }

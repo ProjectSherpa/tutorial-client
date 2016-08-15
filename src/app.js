@@ -18,17 +18,37 @@ import CodeAlong3 from './getting-started/CodeAlong3';
 import Wrapup from './getting-started/Wrapup';
 
 // Vertical Scaling Components
+import VerticalResources from './vertical/VerticalResources';
+import VerticalOverview from './vertical/VerticalOverview';
+import VerticalAction from './vertical/VerticalAction';
+import VerticalWrapup from './vertical/VerticalWrapup';
 
 // Isolation of Services Components
+import IsolationResources from './isolation/IsolationResources';
+import IsolationOverview from './isolation/IsolationOverview';
+import IsolationScenario from './isolation/IsolationScenario';
+import IsolationSolution from './isolation/IsolationSolution';
+import IsolationWrapup from './isolation/IsolationWrapup';
 
 // Content Delivery Components
+import ContentResources from './content-delivery/ContentResources';
+import ContentOverview from './content-delivery/ContentOverview';
+import ContentScenario from './content-delivery/ContentScenario';
+import ContentSolution1 from './content-delivery/ContentSolution1';
+import ContentSolution2 from './content-delivery/ContentSolution2';
+import ContentSolution3 from './content-delivery/ContentSolution3';
+import ContentWrapup from './content-delivery/ContentWrapup';
+
+// Conclusion (end of course) Components
 
 
+// Appendix Components
+import Vagrant1 from './appendix/Vagrant1';
+import Vagrant2 from './appendix/Vagrant2';
+import MySQL from './appendix/MySQL';
+import Bloopers from './appendix/Bloopers';
 
-
-
-
-
+// Public Components (refactor and move to different file)
 import SplashHeader from './SplashComponents/SplashHeader';
 import SplashContent from './SplashComponents/SplashContent';
 import Signup from './SplashComponents/Signup';
@@ -113,6 +133,70 @@ document.addEventListener('DOMContentLoaded', function() {
       </Route>
       <Route path="/gettingstarted/wrapup" component={App}>
         <IndexRoute component={Wrapup}/>
+      </Route>
+
+      <Route path="/vertical/resources" component={App}>
+        <IndexRoute component={VerticalResources}/>
+      </Route>
+      <Route path="/vertical/overview" component={App}>
+        <IndexRoute component={VerticalOverview}/>
+      </Route>
+      <Route path="/vertical/action" component={App}>
+        <IndexRoute component={VerticalAction}/>
+      </Route>
+      <Route path="/vertical/wrapup" component={App}>
+        <IndexRoute component={VerticalWrapup}/>
+      </Route>
+
+      <Route path="/isolation/resources" component={App}>
+        <IndexRoute component={IsolationResources}/>
+      </Route>
+      <Route path="/isolation/overview" component={App}>
+        <IndexRoute component={IsolationOverview}/>
+      </Route>
+      <Route path="/isolation/scenario" component={App}>
+        <IndexRoute component={IsolationScenario}/>
+      </Route>
+      <Route path="/isolation/solution" component={App}>
+        <IndexRoute component={IsolationSolution}/>
+      </Route>
+      <Route path="/isolation/wrapup" component={App}>
+        <IndexRoute component={IsolationWrapup}/>
+      </Route>
+
+      <Route path="/content/resources" component={App}>
+        <IndexRoute component={ContentResources}/>
+      </Route>
+      <Route path="/content/overview" component={App}>
+        <IndexRoute component={ContentOverview}/>
+      </Route>
+      <Route path="/content/scenario" component={App}>
+        <IndexRoute component={ContentScenario}/>
+      </Route>
+      <Route path="/content/solution1" component={App}>
+        <IndexRoute component={ContentSolution1}/>
+      </Route>
+      <Route path="/content/solution2" component={App}>
+        <IndexRoute component={ContentSolution2}/>
+      </Route>
+      <Route path="/content/solution3" component={App}>
+        <IndexRoute component={ContentSolution3}/>
+      </Route>
+      <Route path="/content/wrapup" component={App}>
+        <IndexRoute component={ContentWrapup}/>
+      </Route>
+
+      <Route path="/appendix/mysql" component={App}>
+        <IndexRoute component={MySQL}/>
+      </Route>
+      <Route path="/appendix/vagrant1" component={App}>
+        <IndexRoute component={Vagrant1}/>
+      </Route>
+      <Route path="/appendix/vagrant2" component={App}>
+        <IndexRoute component={Vagrant2}/>
+      </Route>
+      <Route path="/appendix/bloopers" component={App}>
+        <IndexRoute component={Bloopers}/>
       </Route>
 
     </Router>,

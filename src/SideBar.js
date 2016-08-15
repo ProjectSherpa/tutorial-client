@@ -66,67 +66,68 @@ export default class SideBar extends React.Component {
 
           <Panel collapsible defaultExpanded header="Scaling Vertically" className="panel-headings">
             <ButtonGroup fill vertical block>  
-              <Link to="/">
+              <Link to="/vertical/resources">
                 <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources(vagrant videos)</Button>
               </Link>
-              <Link to="/">
+              <Link to="/vertical/overview">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Overview</Button>
               </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="gamepad" className="indent" />   Gameday</Button>
+              <Link to="/vertical/action">
+                <Button className="button-left"><FontAwesome name="gamepad" className="indent" />   Action</Button>
               </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Solution</Button>
-              </Link>
-              <Link to="/">
+              <Link to="/vertical/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
               </Link>
             </ButtonGroup>
           </Panel>
+
           <Panel collapsible defaultExpanded header="Isolation of Services" className="panel-headings">
             <ButtonGroup fill vertical block>  
-              <Link to="/">
+              <Link to="/isolation/resources">
                 <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources(+docker videos)</Button>
               </Link>
-              <Link to="/">
+              <Link to="/isolation/overview">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Overview</Button>
               </Link>
-              <Link to="/">
+              <Link to="/isolation/scenario">
                 <Button className="button-left"><FontAwesome name="gamepad" className="indent" />   Gameday</Button>
               </Link>
-              <Link to="/">
+              <Link to="/isolation/solution">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Code Solution</Button>
               </Link>
-              <Link to="/">
+              <Link to="/isolation/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
               </Link>
             </ButtonGroup>
           </Panel>
+
+
           <Panel collapsible defaultExpanded header="Optimizing Content Delivery" className="panel-headings">
             <ButtonGroup fill vertical block>  
-              <Link to="/">
+              <Link to="/content/resources">
                 <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources</Button>
               </Link>
-              <Link to="/">
+              <Link to="/content/overview">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Overview</Button>
               </Link>
-              <Link to="/">
+              <Link to="/content/scenario">
                 <Button className="button-left"><FontAwesome name="gamepad" className="indent" />   Gameday</Button>
               </Link>
-              <Link to="/">
+              <Link to="/content/solution1">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   S3 + Display</Button>
               </Link>
-              <Link to="/">
+              <Link to="/content/solution2">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   S3 + Cloudfront</Button>
               </Link>
-              <Link to="/">
+              <Link to="/content/solution3">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   P2P</Button>
               </Link>
-              <Link to="/">
+              <Link to="/content/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
               </Link>
             </ButtonGroup>
           </Panel>
+
           <Panel collapsible defaultExpanded header="Fundamentals Recap" className="panel-headings">
             <ButtonGroup fill vertical block>  
               <Link to="/">
@@ -135,42 +136,29 @@ export default class SideBar extends React.Component {
               <Link to="/">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
               </Link>
+              <Link to="/">
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   What's Next?</Button>
+              </Link>
             </ButtonGroup>
           </Panel>
-          <Panel collapsible defaultExpanded header="Horizontal Scaling" className="panel-headings">
+
+          <Panel collapsible defaultExpanded header="Appendix" className="panel-headings">
             <ButtonGroup fill vertical block>  
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Overview</Button>
+              <Link to="/appendix/mysql">
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   MySQL Refresher</Button>
               </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources</Button>
+              <Link to="/appendix/vagrant1">
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Vagrant, Part 1</Button>
               </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="gamepad" className="indent" />   Gameday</Button>
+              <Link to="/appendix/vagrant2">
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Vagrant, Part 2</Button>
               </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   HorizVideo</Button>
-              </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   HorizVideo</Button>
-              </Link>
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
+              <Link to="/appendix/bloopers">
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Bloopers</Button>
               </Link>
             </ButtonGroup>
           </Panel>
-          <Panel collapsible defaultExpanded header="Deep Dives" className="panel-headings">
-            <ButtonGroup fill vertical block>  
-              <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   MySQL</Button>
-              <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources</Button>
-              <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   More Content</Button>
-              <Button className="button-left"><FontAwesome name="file-text" className="indent" />   nginx</Button>
-            </ButtonGroup>
-          </Panel>
-    	    <Button><Link to="/introduction">Introduction</Link></Button>
-    	    <Button><Link to="/vocab">Scalability Vocab</Link></Button>
-          <Button><Link to="/day1">Day 1</Link></Button>
-          <Button><Link to="/day2">Day 2</Link></Button>
+
     	  </ButtonGroup>
     )
   }
