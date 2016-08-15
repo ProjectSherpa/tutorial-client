@@ -66,40 +66,40 @@ app.use(express.static(__dirname + '/www'));
 
 
 
-app.post('/api/signup', function (req, res) {
-	console.log('REQ', req.body)
-  return utils.hashPassword(req.body.password)
-		.then(hashedPassword => {
-			req.body.password = hashedPassword;
-			return User.create(req.body);
-		})
-		.catch(err => {
-			res.status(401).send({message: 'this username has already been taken'});
-		});
-});
+// app.post('/api/signup', function (req, res) {
+// 	console.log('REQ', req.body)
+//   return utils.hashPassword(req.body.password)
+// 		.then(hashedPassword => {
+// 			req.body.password = hashedPassword;
+// 			return User.create(req.body);
+// 		})
+// 		.catch(err => {
+// 			res.status(401).send({message: 'this username has already been taken'});
+// 		});
+// });
 
-app.post('/api/login', function (req, res) {
-  var currentUser;
-	User.findOne({ where: { email: req.body.email }})
-    .then(user => {
-			if (!user) { throw new Error('No account associated with this email address'); }
-			currentUser = user;
-      return compare(req.body.password, user.password)
-    })
-		.then(match => {
-			if (!match) { throw new Error('Wrong password'); }
-			res.json({
-				user: {
-					id: currentUser.id,
-					email: currentUser.email
-				}
-			});
-		})
-		.catch(err => {
-			console.error(err);
-			res.status(401).send({message: err.message});
-		});
-});
+// app.post('/api/login', function (req, res) {
+//   var currentUser;
+// 	User.findOne({ where: { email: req.body.email }})
+//     .then(user => {
+// 			if (!user) { throw new Error('No account associated with this email address'); }
+// 			currentUser = user;
+//       return compare(req.body.password, user.password)
+//     })
+// 		.then(match => {
+// 			if (!match) { throw new Error('Wrong password'); }
+// 			res.json({
+// 				user: {
+// 					id: currentUser.id,
+// 					email: currentUser.email
+// 				}
+// 			});
+// 		})
+// 		.catch(err => {
+// 			console.error(err);
+// 			res.status(401).send({message: err.message});
+// 		});
+// });
 
  
 var server = app.listen(4000, function() {
