@@ -40,7 +40,6 @@
     "sequelize": "^3.24.0",
     "video.js": "^5.10.8",
     "webpack": "^1.13.1",
-    "webpack-dev-middleware": "^1.6.1",
-    "webtorrent": "^0.96.0"
+    "webpack-dev-middleware": "^1.6.1"
   }
 }
