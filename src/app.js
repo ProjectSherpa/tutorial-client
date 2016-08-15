@@ -8,6 +8,10 @@ import ContentContainer from './ContentContainer';
 import Header from './Header';
 import SideBar from './SideBar';
 
+// Basecamp Components
+import Welcome from './basecamp/Welcome';
+import BasecampResources from './basecamp/BasecampResources';
+
 // Getting Started Components
 import Resources from './getting-started/Resources';
 import Intro from './getting-started/Intro';
@@ -40,6 +44,9 @@ import ContentSolution3 from './content-delivery/ContentSolution3';
 import ContentWrapup from './content-delivery/ContentWrapup';
 
 // Conclusion (end of course) Components
+import CourseWrapup from './conclusion/CourseWrapup';
+import AdditionalResources from './conclusion/AdditionalResources';
+import WhatsNext from './conclusion/WhatsNext';
 
 
 // Appendix Components
@@ -112,6 +119,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <IndexRoute component={Signup}/>
       </Route>
 
+      <Route path="/basecamp/welcome" component={App}>
+        <IndexRoute component={Welcome}/>
+      </Route>
+      <Route path="/basecamp/resources" component={App}>
+        <IndexRoute component={BasecampResources}/>
+      </Route>
 
       <Route path="/gettingstarted/resources" component={App}>
         <IndexRoute component={Resources}/>
@@ -184,6 +197,16 @@ document.addEventListener('DOMContentLoaded', function() {
       </Route>
       <Route path="/content/wrapup" component={App}>
         <IndexRoute component={ContentWrapup}/>
+      </Route>
+
+      <Route path="/conclusion/wrapup" component={App}>
+        <IndexRoute component={CourseWrapup}/>
+      </Route>
+      <Route path="/conclusion/resources" component={App}>
+        <IndexRoute component={AdditionalResources}/>
+      </Route>
+      <Route path="/conclusion/whatsnext" component={App}>
+        <IndexRoute component={WhatsNext}/>
       </Route>
 
       <Route path="/appendix/mysql" component={App}>

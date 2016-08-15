@@ -28,13 +28,12 @@ export default class SideBar extends React.Component {
 
           <Panel collapsible defaultExpanded header="Basecamp" className="panel-headings">
             <ButtonGroup fill vertical block>  
-              <Link to="/">
+              <Link to="/basecamp/welcome">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Welcome</Button>
               </Link>
-              <Link to="/">
+              <Link to="/basecamp/resources">
                 <Button className="button-left"><FontAwesome name="file-text" className="indent"/>   Intro Resources</Button>
               </Link> 
-      
             </ButtonGroup>
           </Panel>
 
@@ -128,15 +127,15 @@ export default class SideBar extends React.Component {
             </ButtonGroup>
           </Panel>
 
-          <Panel collapsible defaultExpanded header="Fundamentals Recap" className="panel-headings">
+          <Panel collapsible defaultExpanded header="Course Conclusion" className="panel-headings">
             <ButtonGroup fill vertical block>  
-              <Link to="/">
-                <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Additional Resources</Button>
-              </Link>
-              <Link to="/">
+              <Link to="/conclusion/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
               </Link>
-              <Link to="/">
+              <Link to="/conclusion/resources">
+                <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Keep Learning</Button>
+              </Link>
+              <Link to="/conclusion/whatsnext">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   What's Next?</Button>
               </Link>
             </ButtonGroup>
