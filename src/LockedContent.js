@@ -6,8 +6,8 @@ export default function LockedContent (props) {
   return (
     <div>
     	<Jumbotron className="lock-jumbotron">
-					<h2><span className="glyphicon glyphicon-lock"></span> This Lesson is Locked</h2>
-					<Button className="locked-enroll" bsStyle="primary"><h4>Enroll in Course to Unlock</h4></Button>
+				<h2 className="locked-text"><span className="glyphicon glyphicon-lock"></span> Lesson contents locked</h2>
+				<Button className="locked-enroll" bsStyle="primary"><h4>Enroll in Course to Unlock</h4></Button>
   	  </Jumbotron>
 
     </div>

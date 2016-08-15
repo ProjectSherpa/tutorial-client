@@ -22,15 +22,15 @@ var compare = utils.comparePassword;
 app.use(express.static(__dirname + '/www'));
 
 // boilerplate from webpacDevMiddleware repo 
-app.use(webpackDevMiddleware(compiler, {
-  hot: true,
-  filename: 'bundle.js',
-  publicPath: '/',
-  stats: {
-    colors: true,
-  },
-  historyApiFallback: true,
-}));
+// app.use(webpackDevMiddleware(compiler, {
+//   hot: true,
+//   filename: 'bundle.js',
+//   publicPath: '/',
+//   stats: {
+//     colors: true,
+//   },
+//   historyApiFallback: true,
+// }));
 
 //////////////////////////////////////
 //  DB

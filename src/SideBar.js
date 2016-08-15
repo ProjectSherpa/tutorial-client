@@ -19,11 +19,12 @@ export default class SideBar extends React.Component {
   
   render() {
     return (
+      <div className="sidebar-container">
       	<ButtonGroup className="scroll" vertical block>
     
           <Button>
             <span>Scalability Course Progress</span>
-            <ProgressBar  bsStyle="success" now={5} label={`${5}%`} />
+            <ProgressBar  bsStyle="success" now={22} label={`${22}%`} />
           </Button>
 
           <Panel collapsible defaultExpanded header="Basecamp" className="panel-headings">
@@ -159,6 +160,7 @@ export default class SideBar extends React.Component {
           </Panel>
 
     	  </ButtonGroup>
+      </div>
     )
   }
 }

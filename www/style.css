@@ -2,6 +2,7 @@ body {
 	font-family: Roboto;
   width: 100vw;
   height: 100vh;
+  margin-bottom: 50px;
 }
 .mount {
   width: 100%;
@@ -37,6 +38,7 @@ body {
 	line-height: 2.5;
   width: 100%;
 }
+
 .splash-header {
   font-size: 34px;
   text-align: center;
@@ -47,6 +49,10 @@ body {
   justify-content: space-around; 
   font-size: 28px;
 }
+.splash-content {
+  margin-bottom: 50px;
+}
+
 .jumbotron h1 {
   font-size: 55px;
 }
@@ -67,6 +73,7 @@ body {
 .space {
   margin-left: 5px;
 }
+
 .lock-jumbotron {
   display: flex;
   flex-direction: column;
@@ -76,16 +83,35 @@ body {
 .locked-enroll {
   margin-top: 20px;
   border-radius: 25px;
+  max-width: 40%;
 }
+.locked-text {
+  color: #8c8c8c;
+  font-weight: 200;
+}
+
 .panel-headings {
+  margin-top: 20px;
   margin-bottom: 0px;
+  border-radius: 0px;
+}
+.panel-default>.panel-heading {
+  background-color: #ebe9e9;
 }
 .button-left {
   text-align: left;
+  border-color: #f7f3f3;
+  border-radius: 0px;
+  background-color: 
 }
+
 .indent {
-  margin-left: 15%;
+  margin-left: 10%;
 }
+.status-container {
+  margin-left: 5px;
+}
+
 .video-js {
   width: 855;
   height: 480;
@@ -98,5 +124,70 @@ body {
   width: 855px;
   height: 480px;
 }
+.sidebar-container {
+  background-color: #F5F5F5;
+}
+.prev-next-buttons {
+  border-radius: 0px;
+}
+
+.footer-icon {
+  font-size: 20px;
+}
+/* Meet the Team */
+.team-images {
+  height: 125px;
+  width: 125px;
+  border: 1px solid white;
+}
+.team-social {
+  font-size: 18px;
+}
+.social-icon {
+  margin: 0px 4px;
+}
+.sherpa-team {
+  background-color: #F5F5F5;
+}
+.team-header {
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+/*  FAQ */
+.faq-header {
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 36px;
+}
+.sub-header {
+  font-weight: 200;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.faq-p {
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+/* REVIEWS */
+.reviews {
+  background-color: #F5F5F5;
+}
+.review-header {
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px auto;
+}
+
+
 
 

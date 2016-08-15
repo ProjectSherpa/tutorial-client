@@ -57,6 +57,7 @@ import Bloopers from './appendix/Bloopers';
 
 // Public Components (refactor and move to different file)
 import SplashHeader from './SplashComponents/SplashHeader';
+import SplashFooter from './SplashComponents/SplashFooter';
 import SplashContent from './SplashComponents/SplashContent';
 import Signup from './SplashComponents/Signup';
 import Login from './SplashComponents/Login';
@@ -73,6 +74,7 @@ export default class Splash extends React.Component {
         <div className="splash-body">
           {this.props.children}
         </div>
+        <SplashFooter />
       </div>
     );
   }
@@ -88,10 +90,10 @@ export default class App extends React.Component {
       <div>
 		    <Header /> 
         <div className="page-content">
-  	      <Col xs={4} md={2} className="sidebar">
+  	      <Col xs={4} md={3} className="sidebar">
   	        <SideBar />
   	      </Col>
-  	      <Col xs={8} md={10} className="content-body">
+  	      <Col xs={8} md={9} className="content-body">
   	        <div>
   	          <ContentContainer />
   	        </div>
