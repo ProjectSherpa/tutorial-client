@@ -26,9 +26,8 @@ export default class Login extends React.Component {
 
   logIn(e) {
     console.log('fetch post sent to /api/login');
-    e.preventDefault();
+    // e.preventDefault();
     const { email, password } = this.state;
-    console.log({email, password});
     fetch('/api/login', {
       method: 'POST',
       headers: {'content-type': 'application/json'},
@@ -63,11 +62,9 @@ export default class Login extends React.Component {
 	                onChange={this.handlePassword.bind(this)}
 	              />
 
-								<div style={{}}>
-	                <Button block bsStyle="success" onClick={this.logIn}>
-	                  Log in
-	                </Button>
-	              </div>
+								<Link to="/gettingstarted/codealong1" onClick={this.logIn} className="btn btn-success">Log in</Link>
+	             
+	              
 
           	  </form>
 

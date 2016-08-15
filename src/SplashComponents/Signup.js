@@ -42,7 +42,7 @@ export default class Signup extends React.Component {
 
   signIn(e) {
     console.log('fetch post sent to /api/signup');
-    e.preventDefault();
+    // e.preventDefault();
     fetch('/api/signup', {
       method: 'POST',
       headers: {'content-type': 'application/json'},
@@ -98,12 +98,10 @@ export default class Signup extends React.Component {
 	                />                 
 	              </FormGroup>
 
-	              <div style={{}}>
-	                <Button block bsStyle="success" onClick={this.signIn}>
-	                  Sign up
-	                </Button>
-	              </div>
-            </form>
+								<Link to="/basecamp/welcome" onClick={this.signIn} className="btn btn-success">Sign in</Link>
+
+	                
+              </form>
 
 	          	  <p className="signup-question">Already have an account? <Link className="space" to="/login">Log in</Link></p>
 	          

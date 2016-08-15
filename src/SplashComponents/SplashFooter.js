@@ -1,6 +1,8 @@
 import React from 'react';
 import {Navbar, Nav, NavItem, MenuItem, NavDropdown, FormGroup, FormControl, Button, LinkContainer} from 'react-bootstrap';
 import {Link} from 'react-router';
+var FontAwesome = require('react-fontawesome');
+
 
 export default class SplashHeader extends React.Component {
   
@@ -12,11 +14,11 @@ export default class SplashHeader extends React.Component {
   render() {
     
     return (
-      <Navbar>
+      <Navbar className="navbar-fixed-bottom">
         <Nav pullLeft>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#"><h4>Logo/Home</h4></a>
+              <a href="#">Logo</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -24,16 +26,13 @@ export default class SplashHeader extends React.Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <NavItem>
-                <h4>Curriculum</h4>
+                Contact Us
               </NavItem>
-              <NavItem>
-                <h4>Pricing</h4>
+              <NavItem className="footer-icon">
+                <a href="https://twitter.com/scalingsherpa"><FontAwesome name="twitter"/></a>
               </NavItem>
-              <NavItem>
-                <h4>Reviews</h4>
-              </NavItem>
-              <NavItem>
-                <Link to="/login"><Button>Sign In</Button></Link>
+              <NavItem className="footer-icon">
+                <a href="https://www.youtube.com/channel/UCbR1cFgEvnlj52E6YkQLhRQ"><FontAwesome name="youtube-play"/></a>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
@@ -41,9 +40,3 @@ export default class SplashHeader extends React.Component {
     );
   }
 }
-
-
-
-
-
-
