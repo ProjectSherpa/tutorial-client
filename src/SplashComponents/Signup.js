@@ -98,7 +98,7 @@ export default class Signup extends React.Component {
 	                />                 
 	              </FormGroup>
 
-								<Link to="/basecamp/welcome" onClick={this.signIn} className="btn btn-success">Sign in</Link>
+								<Link to="" onClick={this.signIn} className="btn btn-success">Sign in</Link>
 
 	                
               </form>

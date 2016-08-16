@@ -119,9 +119,6 @@ export default class SideBar extends React.Component {
               <Link to="/content/solution2">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   S3 + Cloudfront</Button>
               </Link>
-              <Link to="/content/solution3">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   P2P</Button>
-              </Link>
               <Link to="/content/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
               </Link>

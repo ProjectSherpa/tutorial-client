@@ -3,6 +3,9 @@ import React, { PropTypes } from 'react';
 import Video from '../Video';
 import RenderMarkdown from '../RenderMarkdown';
 
+var session = require('../../www/assets.js');
+import LockedContent from '../LockedContent';
+
 export default class Intro extends React.Component {
   constructor(props) {
     super(props);
@@ -17,6 +20,12 @@ export default class Intro extends React.Component {
   render() {
     if (!this.state.vidURL) {
       return "Loading...";
+    }
+
+    if(!session.loggedIn) {
+      return(
+        <LockedContent />
+      )
     }
     
     return (

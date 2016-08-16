@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react'
 import {Row, Col, FormGroup, ControlLabel, FormControl, HelpBlock, Button} from 'react-bootstrap';
 import {Link} from 'react-router';
 
+import MailChimp from '../MailChimp';
+
 export default class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -62,10 +64,7 @@ export default class Login extends React.Component {
 	                onChange={this.handlePassword.bind(this)}
 	              />
 
-								<Link to="/gettingstarted/codealong1" onClick={this.logIn} className="btn btn-success">Log in</Link>
-	             
-	              
-
+								<Link to="" onClick={this.logIn} className="btn btn-success">Log in</Link>
           	  </form>
 
 	          	  <p className="signup-question">Need an account? <Link className="space" to="/signup">Sign up</Link></p>
@@ -73,6 +72,7 @@ export default class Login extends React.Component {
 	          </Col>
 	          <Col md={4}></Col>
 	        </Row>
+	        <MailChimp />
 	    </div>
 	  )
   }
