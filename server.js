@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true}));
  
 var compiler = webpack(webpackConfig);
 
-var utils = require('./server/utils.js');
-var compare = utils.comparePassword;
+// var utils = require('./server/utils.js');
+// var compare = utils.comparePassword;
 
 
  
