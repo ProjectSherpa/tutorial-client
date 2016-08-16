@@ -21,6 +21,10 @@ export default class SideBar extends React.Component {
     return (
       <div className="sidebar-container">
       	<ButtonGroup className="scroll" vertical block>
+
+          <Button className="prev-next-buttons">
+            Profile
+          </Button>
     
           <Button>
             <span>Scalability Course Progress</span>
