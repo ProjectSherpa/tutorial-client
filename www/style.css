@@ -190,6 +190,27 @@ body {
   margin: 25px auto;
 }
 
+/* Content Text Stylings */
+.post-body h1 {
+  font-weight: 300;
+}
+.post-body h2 {
+  font-weight: 300;
+}
+.post-body h3 {
+  font-weight: 300
+}
+
+.post-body p {
+  font-size: 17px;
+  font-weight: 200;
+}
+.post-body li {
+  font-size: 17px;
+  font-weight: 200;
+}
+
+
 
 
 

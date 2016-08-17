@@ -22,7 +22,7 @@ export default class Intro extends React.Component {
       return "Loading...";
     }
 
-    if(!session.loggedIn) {
+    if(true) {
       return(
         <LockedContent />
       )

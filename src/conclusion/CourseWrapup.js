@@ -14,7 +14,7 @@ export default class CourseWrapup extends React.Component {
   }
   
   render() {
-    if(!session.loggedIn) {
+    if(true) {
       return(
         <LockedContent />
       )

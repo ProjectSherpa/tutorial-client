@@ -30,7 +30,6 @@ The following tools are used to teach scalibility.
 ### Services
 * [AWS] - Amazon web-services 
 * [DigitalOcean] - cloud deployment service
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 [React]: <https://facebook.github.io/react/>
 [@scalibilitysherpa]: <http://scalibilitysherpa.com>
