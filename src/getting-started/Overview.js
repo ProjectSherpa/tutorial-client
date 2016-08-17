@@ -3,6 +3,9 @@ import React, { PropTypes } from 'react';
 import Video from '../Video';
 import RenderMarkdown from '../RenderMarkdown';
 
+var session = require('../../www/assets.js');
+import LockedContent from '../LockedContent';
+
 export default class Overview extends React.Component {
   constructor(props) {
     super(props);
@@ -18,10 +21,16 @@ export default class Overview extends React.Component {
     if (!this.state.vidURL) {
       return "Loading...";
     }
+
+    if(!session.loggedIn) {
+      return(
+        <LockedContent />
+      )
+    }
     
     return (
       <div className="post">
-        <h2>Deep Dive into This Module?</h2>
+        <h2>Deep Dive into This Module? (text instead of video?)</h2>
         <Video className="wide" video={this.state.vidURL} screenshot={this.state.screenshot}/>
       </div>
     );

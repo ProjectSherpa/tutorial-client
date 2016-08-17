@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import {DropdownButton, MenuItem, ButtonGroup, Button} from 'react-bootstrap';
+import {DropdownButton, MenuItem, ButtonGroup, Button, Col} from 'react-bootstrap';
 
 export default function ContentContainer (props) {
   return (

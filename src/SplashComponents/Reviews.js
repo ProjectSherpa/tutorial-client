@@ -24,7 +24,6 @@ export default function Reviews (props) {
 	      </Col>
 	      <Col md={1}></Col>
 	    </Row>
-      <div>test</div>
       <br/>
       <br/>
       <br/>

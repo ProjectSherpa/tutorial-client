@@ -18,7 +18,7 @@ export default class SplashHeader extends React.Component {
         <Nav pullLeft>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Logo</a>
+              <a href="#"></a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

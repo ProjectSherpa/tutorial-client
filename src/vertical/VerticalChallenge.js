@@ -6,18 +6,20 @@ import RenderMarkdown from '../RenderMarkdown';
 var session = require('../../www/assets.js');
 import LockedContent from '../LockedContent';
 
-export default class ContentSolution2 extends React.Component {
+export default class VerticalChallenge extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      vidURL: "x",
-      screenshot: "http://bit.ly/2brah6p"
+      vidURL: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-05+-VerticalScalingChallengeAWS.mp4",
+      screenshot: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-05-challenge"
     }
   }
-  
-   
 
   render() {
+    if (!this.state.vidURL) {
+      return "Loading...";
+    }
+
     if(!session.loggedIn) {
       return(
         <LockedContent />
@@ -26,9 +28,9 @@ export default class ContentSolution2 extends React.Component {
     
     return (
       <div className="post">
-        <h2>Content Solution 2</h2>
+        <h2>Vertical Scaling Overview</h2>
         <Video className="wide" video={this.state.vidURL} screenshot={this.state.screenshot}/>
-
+        <h3></h3>
       </div>
     );
   }

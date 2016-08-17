@@ -25,6 +25,7 @@ import Wrapup from './getting-started/Wrapup';
 import VerticalResources from './vertical/VerticalResources';
 import VerticalOverview from './vertical/VerticalOverview';
 import VerticalAction from './vertical/VerticalAction';
+import VerticalChallenge from './vertical/VerticalChallenge';
 import VerticalWrapup from './vertical/VerticalWrapup';
 
 // Isolation of Services Components
@@ -40,14 +41,12 @@ import ContentOverview from './content-delivery/ContentOverview';
 import ContentScenario from './content-delivery/ContentScenario';
 import ContentSolution1 from './content-delivery/ContentSolution1';
 import ContentSolution2 from './content-delivery/ContentSolution2';
-import ContentSolution3 from './content-delivery/ContentSolution3';
 import ContentWrapup from './content-delivery/ContentWrapup';
 
 // Conclusion (end of course) Components
 import CourseWrapup from './conclusion/CourseWrapup';
 import AdditionalResources from './conclusion/AdditionalResources';
 import WhatsNext from './conclusion/WhatsNext';
-
 
 // Appendix Components
 import Vagrant1 from './appendix/Vagrant1';
@@ -88,15 +87,12 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-		    <Header /> 
         <div className="page-content">
   	      <Col xs={4} md={3} className="sidebar">
   	        <SideBar />
   	      </Col>
   	      <Col xs={8} md={9} className="content-body">
-  	        <div>
-  	          <ContentContainer />
-  	        </div>
+            <ContentContainer />
   	        <div className="post-body">
   	          {this.props.children}
   	        </div>
@@ -159,6 +155,9 @@ document.addEventListener('DOMContentLoaded', function() {
       <Route path="/vertical/action" component={App}>
         <IndexRoute component={VerticalAction}/>
       </Route>
+      <Route path="/vertical/challenge" component={App}>
+        <IndexRoute component={VerticalChallenge}/>
+      </Route>
       <Route path="/vertical/wrapup" component={App}>
         <IndexRoute component={VerticalWrapup}/>
       </Route>
@@ -193,9 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
       </Route>
       <Route path="/content/solution2" component={App}>
         <IndexRoute component={ContentSolution2}/>
-      </Route>
-      <Route path="/content/solution3" component={App}>
-        <IndexRoute component={ContentSolution3}/>
       </Route>
       <Route path="/content/wrapup" component={App}>
         <IndexRoute component={ContentWrapup}/>

@@ -21,16 +21,16 @@ export default function LearnThis (props) {
     	  <div className="splash-content">
     	      
     	      <ul className="list-unstyled splash-techs">
-    	        <li>Intro to Vertical Scaling</li>
-    	        <li>Intro to Horizontal Scaling</li>
-    	        <li>Content Delivery Strategies</li>
+    	        <li>Vertical Scaling</li>
+    	        <li>Docker</li>
+    	        <li>Content Delivery</li>
     	        <li>Amazon EC2</li>
     	        <li>Amazon S3</li>
-    	        <li>Docker</li>
+    	        <li>Vagrant</li>
     	      </ul>
     	    
     	      <ul className="list-unstyled splash-techs">
-    	        <li>Vagrant</li>
+    	        <li>Horizontal Scaling</li>
     	        <li>Webtorrents</li>
     	        <li>Load Testing</li>
     	        <li>MySQL Scaling</li>
@@ -39,17 +39,16 @@ export default function LearnThis (props) {
     	      </ul>
     	    
     	      <ul className="list-unstyled splash-techs">
-    	        <li>Siege</li>
-    	        <li>Node Clusters</li>
     	        <li>Redis</li>
+    	        <li>Node Clusters</li>
+    	        <li>Siege</li>
     	        <li>Isolation of Services</li>
     	        <li>Microservices</li>
-    	        <li>Revise, etc.</li>
+    	        <li>AWS Lambda</li>
     	      </ul>
 
     	  </div>
     	</Row>
-    	<hr/>
     </div>
   )
 }  

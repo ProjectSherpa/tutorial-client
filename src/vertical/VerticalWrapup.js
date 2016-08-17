@@ -3,12 +3,15 @@ import React, { PropTypes } from 'react';
 import Video from '../Video';
 import RenderMarkdown from '../RenderMarkdown';
 
+var session = require('../../www/assets.js');
+import LockedContent from '../LockedContent';
+
 export default class VerticalWrapup extends React.Component {
 	constructor(props) {
     super(props);
     this.state = {
     	vidURL: "x",
-      screenshot: "https://avatars1.githubusercontent.com/u/20851055?v=3&s=200"
+      screenshot: "http://bit.ly/2brah6p"
     }
   }
   
@@ -17,6 +20,12 @@ export default class VerticalWrapup extends React.Component {
   render() {
     if (!this.state.vidURL) {
       return "Loading...";
+    }
+
+    if(!session.loggedIn) {
+      return(
+        <LockedContent />
+      )
     }
   	
     return (

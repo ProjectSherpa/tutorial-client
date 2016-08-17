@@ -62,10 +62,7 @@ export default class Login extends React.Component {
 	                onChange={this.handlePassword.bind(this)}
 	              />
 
-								<Link to="/gettingstarted/codealong1" onClick={this.logIn} className="btn btn-success">Log in</Link>
-	             
-	              
-
+								<Link to="/basecamp/welcome" onClick={this.logIn} className="btn btn-success">Log in</Link>
           	  </form>
 
 	          	  <p className="signup-question">Need an account? <Link className="space" to="/signup">Sign up</Link></p>

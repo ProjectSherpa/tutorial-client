@@ -21,6 +21,10 @@ export default class SideBar extends React.Component {
     return (
       <div className="sidebar-container">
       	<ButtonGroup className="scroll" vertical block>
+
+          <Button className="prev-next-buttons">
+            Profile
+          </Button>
     
           <Button>
             <span>Scalability Course Progress</span>
@@ -73,7 +77,10 @@ export default class SideBar extends React.Component {
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Overview</Button>
               </Link>
               <Link to="/vertical/action">
-                <Button className="button-left"><FontAwesome name="gamepad" className="indent" />   Action</Button>
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Action</Button>
+              </Link>
+              <Link to="/vertical/challenge">
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Scaling Challenge</Button>
               </Link>
               <Link to="/vertical/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
@@ -118,9 +125,6 @@ export default class SideBar extends React.Component {
               </Link>
               <Link to="/content/solution2">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   S3 + Cloudfront</Button>
-              </Link>
-              <Link to="/content/solution3">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   P2P</Button>
               </Link>
               <Link to="/content/wrapup">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent" />   Wrap up</Button>
