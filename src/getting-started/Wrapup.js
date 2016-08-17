@@ -22,7 +22,7 @@ export default class Wrapup extends React.Component {
       return "Loading...";
     }
     
-    if(!session.loggedIn) {
+    if(true) {
       return(
         <LockedContent />
       )

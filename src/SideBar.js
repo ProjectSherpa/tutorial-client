@@ -39,6 +39,9 @@ export default class SideBar extends React.Component {
               <Link to="/basecamp/resources">
                 <Button className="button-left"><FontAwesome name="file-text" className="indent"/>   Intro Resources</Button>
               </Link> 
+              <Link to="/basecamp/note">
+                <Button className="button-left"><FontAwesome name="file-text" className="indent"/>   A Note Before You Begin</Button>
+              </Link> 
             </ButtonGroup>
           </Panel>
 
@@ -48,11 +51,8 @@ export default class SideBar extends React.Component {
                 <Button className="button-left"><FontAwesome name="file-text" className="indent"/>   Resources</Button>
               </Link>
               <Link to="/gettingstarted/intro">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Module Intro (together?)</Button>
+                <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Introduction to System Architecture</Button>
               </Link>
-              <Link to="/gettingstarted/overview">
-                <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Single Server Architecture</Button>
-              </Link> 
               <Link to="/gettingstarted/codealong1">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Code Along 1</Button>
               </Link>
@@ -71,7 +71,7 @@ export default class SideBar extends React.Component {
           <Panel collapsible defaultExpanded header="Scaling Vertically" className="panel-headings">
             <ButtonGroup fill vertical block>  
               <Link to="/vertical/resources">
-                <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources(vagrant videos)</Button>
+                <Button className="button-left"><FontAwesome name="file-text" className="indent" />   Resources</Button>
               </Link>
               <Link to="/vertical/overview">
                 <Button className="button-left"><FontAwesome name="video-camera" className="indent"/>   Overview</Button>

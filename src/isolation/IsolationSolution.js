@@ -16,7 +16,7 @@ export default class IsolationSolution extends React.Component {
    
 
   render() {
-    if(!session.loggedIn) {
+    if(true) {
       return(
         <LockedContent />
       )

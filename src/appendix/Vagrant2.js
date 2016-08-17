@@ -28,7 +28,7 @@ export default class Vagrant2 extends React.Component {
       <div className="post">
         <h2>Working with Vagrant, Part 2</h2>
         <Video className="wide" video={this.state.vidURL} screenshot={this.state.screenshot}/>
-        <h3></h3>
+        <RenderMarkdown markdown={`### [Back to Vertical Scaling](/#/vertical/resources)`} />
       </div>
     );
   }

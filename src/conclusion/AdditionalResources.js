@@ -14,7 +14,7 @@ export default class AdditionalResources extends React.Component {
   }
   
   render() {
-    if(!session.loggedIn) {
+    if(true) {
       return(
         <LockedContent />
       )

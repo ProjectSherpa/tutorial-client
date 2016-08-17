@@ -11,11 +11,11 @@ import SideBar from './SideBar';
 // Basecamp Components
 import Welcome from './basecamp/Welcome';
 import BasecampResources from './basecamp/BasecampResources';
+import BeforeStart from './basecamp/BeforeStart';
 
 // Getting Started Components
 import Resources from './getting-started/Resources';
 import Intro from './getting-started/Intro';
-import Overview from './getting-started/Overview';
 import CodeAlong1 from './getting-started/CodeAlong1';
 import CodeAlong2 from './getting-started/CodeAlong2';
 import CodeAlong3 from './getting-started/CodeAlong3';
@@ -123,15 +123,15 @@ document.addEventListener('DOMContentLoaded', function() {
       <Route path="/basecamp/resources" component={App}>
         <IndexRoute component={BasecampResources}/>
       </Route>
+      <Route path="/basecamp/note" component={App}>
+        <IndexRoute component={BeforeStart}/>
+      </Route>
 
       <Route path="/gettingstarted/resources" component={App}>
         <IndexRoute component={Resources}/>
       </Route>
       <Route path="/gettingstarted/intro" component={App}>
         <IndexRoute component={Intro}/>
-      </Route>
-      <Route path="/gettingstarted/overview" component={App}>
-        <IndexRoute component={Overview}/>
       </Route>
       <Route path="/gettingstarted/codealong1" component={App}>
         <IndexRoute component={CodeAlong1}/>

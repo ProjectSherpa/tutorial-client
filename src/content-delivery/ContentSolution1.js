@@ -18,7 +18,7 @@ export default class ContentSolution1 extends React.Component {
    
 
   render() {
-    if(!session.loggedIn) {
+    if(true) {
       return(
         <LockedContent />
       )
