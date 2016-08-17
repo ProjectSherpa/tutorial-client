@@ -1,4 +1,4 @@
 module.exports = {
-	loggedIn: false
+	loggedIn: true
 }
 	

@@ -10,8 +10,8 @@ export default class Welcome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      vidURL: "",
-      screenshot: "http://bit.ly/2brah6p"
+      vidURL: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/00+-+intro/00+-+IntroToScalability4k.mp4",
+      screenshot: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/00+-+intro/00-intro.png"
     }
   }
   

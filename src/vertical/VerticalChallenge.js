@@ -6,16 +6,14 @@ import RenderMarkdown from '../RenderMarkdown';
 var session = require('../../www/assets.js');
 import LockedContent from '../LockedContent';
 
-export default class VerticalAction extends React.Component {
+export default class VerticalChallenge extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      vidURL: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-04+-+Vertical+Scaling+in+Action.mp4",
-      screenshot: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-04-action"
+      vidURL: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-05+-VerticalScalingChallengeAWS.mp4",
+      screenshot: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-05-challenge"
     }
   }
-  
-   
 
   render() {
     if (!this.state.vidURL) {
@@ -30,7 +28,7 @@ export default class VerticalAction extends React.Component {
     
     return (
       <div className="post">
-        <h2>Vertical Scaling In Action</h2>
+        <h2>Vertical Scaling Overview</h2>
         <Video className="wide" video={this.state.vidURL} screenshot={this.state.screenshot}/>
         <h3></h3>
       </div>

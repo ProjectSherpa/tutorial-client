@@ -11,7 +11,7 @@ export default class VerticalOverview extends React.Component {
     super(props);
     this.state = {
       vidURL: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/02-00+-+Intro+to+Vertical+Scaling.mp4",
-      screenshot: "https://avatars1.githubusercontent.com/u/20851055?v=3&s=200"
+      screenshot: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/02-+Vertical+Scaling/overview2.png"
     }
   }
   

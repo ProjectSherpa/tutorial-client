@@ -25,6 +25,7 @@ import Wrapup from './getting-started/Wrapup';
 import VerticalResources from './vertical/VerticalResources';
 import VerticalOverview from './vertical/VerticalOverview';
 import VerticalAction from './vertical/VerticalAction';
+import VerticalChallenge from './vertical/VerticalChallenge';
 import VerticalWrapup from './vertical/VerticalWrapup';
 
 // Isolation of Services Components
@@ -153,6 +154,9 @@ document.addEventListener('DOMContentLoaded', function() {
       </Route>
       <Route path="/vertical/action" component={App}>
         <IndexRoute component={VerticalAction}/>
+      </Route>
+      <Route path="/vertical/challenge" component={App}>
+        <IndexRoute component={VerticalChallenge}/>
       </Route>
       <Route path="/vertical/wrapup" component={App}>
         <IndexRoute component={VerticalWrapup}/>
