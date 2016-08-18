@@ -11,11 +11,17 @@ export default class Signup extends React.Component {
       password: '',
       confirm: ''
     }
-    this.signIn = this.signIn.bind(this);
+    this.signUp = this.signUp.bind(this);
   }
-  
+
   // form field handlers
-  handleName(e) {
+  handleFirstName(e) {
+    this.setState({
+      name: e.target.value
+    });
+  }
+
+  handleLastName(e) {
     this.setState({
       name: e.target.value
     });
@@ -40,23 +46,45 @@ export default class Signup extends React.Component {
 	  });
   }
 
-  signIn(e) {
-    console.log('fetch post sent to /api/signup');
+  signUp(e) {
+    console.log('fetch post sent to http://polls.apiblueprint.org/users');
     // e.preventDefault();
-    fetch('/api/signup', {
+    var users = {
+      "users": [
+        {
+          "userid": undefined,
+          "first": "Quin",
+          "last": "Kinser",
+          "email": "quinkinser@gmail.com",
+          "username": "quink",
+          "lessonsCompleted": []
+        },
+        {
+          "userid": 2,
+          "first": "Wayne",
+          "last": "Adams",
+          "email": "quinkinser@gmail.com",
+          "username": "wayney",
+          "lessonsCompleted": []
+        },
+        {
+          "userid": 3,
+          "first": "Jeremy",
+          "last": "Toce",
+          "email": "quinkinser@gmail.com",
+          "username": "toasty",
+          "lessonsCompleted": []
+        }
+      ]
+    }
+    fetch('http://private-440399-sherpaapi.apiary-mock.com/users', {
       method: 'POST',
-      headers: {'content-type': 'application/json'},
-      body: JSON.stringify({ 
-      	name: this.state.name, 
-      	email: this.state.email, 
-      	password: this.state.password 
-      }),
+      body: users
     })
     .then(res => res.json())
-    .then(body => {
-      // sessions or jwt here?
-    });
-
+    .then(resJson => {
+      console.log('resJson', resJson);
+    })
   }
 
   render() {
@@ -68,12 +96,19 @@ export default class Signup extends React.Component {
 	          	<img className="signup-logo" src="https://avatars1.githubusercontent.com/u/20851055?v=3&s=200" alt="Scalability Sherpa Logo"/>
 	          	<form>
 	              <FormGroup controlId="formBasicText">
-	                
+
 	                <FormControl className="login"
 	                  type="text"
-	                  value={this.state.name}
-	                  placeholder="Full Name"
-	                  onChange={this.handleName.bind(this)}
+	                  value={this.state.firstName}
+	                  placeholder="First Name"
+	                  onChange={this.handleFirstName.bind(this)}
+	                />
+
+                  <FormControl className="login"
+	                  type="text"
+	                  value={this.state.lastName}
+	                  placeholder="Last Name"
+	                  onChange={this.handleLastName.bind(this)}
 	                />
 
 	                <FormControl className="login"
@@ -83,7 +118,7 @@ export default class Signup extends React.Component {
 	                  onChange={this.handleEmail.bind(this)}
 	                />
 
-	                <FormControl className="login" 
+	                <FormControl className="login"
 	                  type="password"
 	                  value={this.state.password}
 	                  placeholder="Password"
@@ -95,16 +130,16 @@ export default class Signup extends React.Component {
 	                  value={this.state.confirm}
 	                  placeholder="Confirm Password"
 	                  onChange={this.handleConfirm.bind(this)}
-	                />                 
+	                />
 	              </FormGroup>
 
-								<Link to="" onClick={this.signIn} className="btn btn-success">Sign in</Link>
+								<Link to="/login" onClick={this.signUp} className="btn btn-success">Sign Up</Link>
 
-	                
+
               </form>
 
 	          	  <p className="signup-question">Already have an account? <Link className="space" to="/login">Log in</Link></p>
-	          
+
 	          </Col>
 	          <Col md={4}></Col>
 	        </Row>
