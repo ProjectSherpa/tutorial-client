@@ -19,9 +19,7 @@ We'll outline a few simple architectures for you below to get you thinking. Keep
 ### 1. Single Server
 Here, we put all the pieces onto one machine, or server. Building an app like this might make sense for prototyping, hackathons, or other times where scalability isn't a concern.
 
->
-> Insert Diagram of Single Server
->
+![MacDown logo](https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/01-Single+Server+Setup+/singleserver.png)
 
 **Positives:**
 - Speed in setting up!
@@ -32,9 +30,8 @@ Here, we put all the pieces onto one machine, or server. Building an app like th
 ### 2. Give Your Database its Own Machine
 By putting your database on it's own server, we gain some added security benefits and separation of concerns while adding only minimal complexity to our system design.
 
->
-> Insert Diagram of DB separated
->
+![MacDown logo](https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/01-Single+Server+Setup+/separateDBserver.png)
+
 
 **Positives:**
 - Still speedy to set up!
@@ -48,9 +45,8 @@ By putting your database on it's own server, we gain some added security benefit
 ### 3. Adding a Load Balancer
 Here, we'll add a machine dedicated to one task: distributing work between other servers. Ideally, the load balancer prevents other servers from getting overloaded with work. There are many implementations of load balancers. Adding a load balancer is a logical first step in horizontal scaling.
 
->
-> Insert Diagram of Load Balancer
->
+![MacDown logo](https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/01-Single+Server+Setup+/loadbalancer.png)
+
 
 **Positives:**
 - Add many servers for the load balancer to distribute work to.
