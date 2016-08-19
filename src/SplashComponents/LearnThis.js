@@ -11,7 +11,7 @@ export default function LearnThis (props) {
     	  </Col>
     	  
     	  <Col md={8} className="panel-right">
-    	    <h1 className="pitch">Learn system architecture with your very own sherpas leading the way</h1>
+    	    <h1 className="pitch">Learn system architecture with your very own Software Engineers leading the way</h1>
     	  </Col>
     	  <Col md={1}></Col>
     	</Row>
