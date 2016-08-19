@@ -175,7 +175,7 @@ body {
   font-weight: 300;
 }
 /* REVIEWS */
-.reviews {
+.colored-panel {
   background-color: #F5F5F5;
 }
 .review-header {
@@ -215,6 +215,18 @@ body {
 }
 .lesson-incomplete {
   
+}
+/* Video Panel */
+.splash-video {
+  width: 90% !important;
+  height: 350px;
+}
+.video-header {
+  font-weight: 500;
+}
+.disqus {
+ margin-left: 10%;
+ margin-right: 10%;
 }
 
 

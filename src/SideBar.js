@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import {ButtonGroup, Button, DropdownButton, MenuItem, ProgressBar, Panel, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {ButtonGroup, Button, DropdownButton, MenuItem, ProgressBar, Panel, ListGroup, ListGroupItem, Row} from 'react-bootstrap';
 import {Link} from 'react-router';
 var FontAwesome = require('react-fontawesome');
 
@@ -14,7 +14,7 @@ export default class SideBar extends React.Component {
         "last": "Kinser",
         "email": "quinkinser@gmail.com",
         "username": "quink",
-        "lessonsCompleted": ["lid1", "lid2", "lid3", "lid4", "lid7", "lid29", "lid30", "lid20"]
+        "lessonsCompleted": []
       },
       complete: "button-left lesson-completed",
       incomplete: "button-left",
@@ -113,7 +113,7 @@ export default class SideBar extends React.Component {
     if (check === -1) {
       lessons.push(lid);
     } else {
-      this.state.lessons[lid] = "button-left"
+      this.state.lessons[lid] = "button-left";
       lessons.splice(check, 1);
     }
     this.displayLessons();
@@ -128,9 +128,11 @@ export default class SideBar extends React.Component {
       <div className="sidebar-container">
       	<ButtonGroup className="scroll" vertical block>
 
-          <Button className="prev-next-buttons">
-            Profile
-          </Button>
+          <Link to="/">
+            <Button  className="prev-next-buttons">
+              Log out
+            </Button>
+          </Link>
     
           <Button>
             <span>Scalability Course Progress</span>
@@ -138,10 +140,12 @@ export default class SideBar extends React.Component {
           </Button>
 
           <Panel collapsible defaultExpanded header="Basecamp" className="panel-headings">
-            <ButtonGroup fill vertical block>  
+            <ButtonGroup fill vertical block> 
+         
+                
               <Link to="/basecamp/welcome">
                 <Button id="lid1" onClick={() => this.markComplete("lid1")}  className={this.state.lessons.lid1}><FontAwesome name="video-camera" className="indent"/>   Welcome</Button>
-              </Link>
+              </Link> 
               <Link to="/basecamp/resources">
                 <Button id="lid2" onClick={() => this.markComplete("lid2")} className={this.state.lessons.lid2}><FontAwesome name="file-text" className="indent"/>   Intro Resources</Button>
               </Link> 

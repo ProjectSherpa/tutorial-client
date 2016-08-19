@@ -24,16 +24,7 @@ export default class SplashHeader extends React.Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <NavItem>
-                <h4>Curriculum</h4>
-              </NavItem>
-              <NavItem>
-                <h4>Pricing</h4>
-              </NavItem>
-              <NavItem>
-                <h4>Reviews</h4>
-              </NavItem>
-              <NavItem>
-                <Link to="/login"><Button>Sign In</Button></Link>
+                <Link to="/login"><Button bsStyle="success">Explore the Curriculum</Button></Link>
               </NavItem>
             </Nav>
           </Navbar.Collapse>

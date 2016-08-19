@@ -14,6 +14,10 @@ export default class Welcome extends React.Component {
       screenshot: "https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/00+-+intro/00-intro.png"
     }
   }
+
+  componentWillMount() {
+
+  }
   
   render() {
     if(!session.loggedIn) {
@@ -26,8 +30,7 @@ export default class Welcome extends React.Component {
       <div className="post">
         <h2>Welcome to the Course</h2>
         <Video className="wide" video={this.state.vidURL} screenshot={this.state.screenshot}/>
-        <h3></h3>
-      </div>
+      </div>  
     );
   }
 }
