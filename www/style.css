@@ -210,6 +210,12 @@ body {
   font-weight: 200;
 }
 
+.lesson-completed {
+  background-color: #5CB85C;
+}
+.lesson-incomplete {
+  
+}
 
 
 

@@ -63,8 +63,9 @@ import Login from './SplashComponents/Login';
 
 export default class Splash extends React.Component {
   constructor(props) {
-    super(props);
+    super(props);   
   }
+
 
   render() {
     return (
