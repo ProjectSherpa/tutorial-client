@@ -4,7 +4,7 @@ export default function FAQ (props) {
     <div className="faq">
       <h1 className="splash-header faq-header">FAQ</h1>
       <div>
-        <h1 className="splash-header sub-header">How long is the course formatted?</h1>
+        <h1 className="splash-header sub-header">How is the course formatted?</h1>
         <div className="faq-p">
           <p>The course is comprised of a series of modules, each with text content, video lessons, and video code alongs. You'll learn, and then solve a scalability problem using a common industry tool.</p>
         </div>
