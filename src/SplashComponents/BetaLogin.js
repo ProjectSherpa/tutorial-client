@@ -62,7 +62,7 @@ export default class BetaLogin extends React.Component {
 	        <Row className="content inner-container">
 	          <Col md={4}></Col>
 	          <Col md={4}>
-              <h1 className="faq-header">Keep scaling with us.</h1>
+              <h1 className="faq-header">Start scaling with us.</h1>
               <br/>
 	          	<form>
 		          	<FormControl className="login"
@@ -103,7 +103,7 @@ export default class BetaLogin extends React.Component {
 
 								<Link to="/basecamp/welcome" onClick={this.sendInfo} className="btn btn-success">Let's Get Started!</Link>
           	  </form>
-	          	  <p className="signup-question">I don't want to provide my email, take me to the  <Link className="space" to="/signup">Course</Link></p>
+	          	  <p className="signup-question">I don't want to provide my email, take me to the  <Link className="space" to="/basecamp/welcome">Course</Link></p>
 	          
 	          </Col>
 	          <Col md={4}></Col>
