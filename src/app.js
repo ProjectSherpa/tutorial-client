@@ -60,11 +60,13 @@ import SplashFooter from './SplashComponents/SplashFooter';
 import SplashContent from './SplashComponents/SplashContent';
 import Signup from './SplashComponents/Signup';
 import Login from './SplashComponents/Login';
+import BetaLogin from './SplashComponents/BetaLogin';
 
 export default class Splash extends React.Component {
   constructor(props) {
-    super(props);
+    super(props);   
   }
+
 
   render() {
     return (
@@ -92,7 +94,7 @@ export default class App extends React.Component {
   	        <SideBar />
   	      </Col>
   	      <Col xs={8} md={9} className="content-body">
-            <ContentContainer />
+            {/*<ContentContainer />*/}
   	        <div className="post-body">
   	          {this.props.children}
   	        </div>
@@ -111,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <IndexRoute component={SplashContent}/>
       </Route>
       <Route path="/login" component={Splash}>
-        <IndexRoute component={Login}/>
+        <IndexRoute component={BetaLogin}/>
       </Route>
       <Route path="/signup" component={Splash}>
         <IndexRoute component={Signup}/>

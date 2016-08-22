@@ -22,6 +22,10 @@ At a high level, we understand that our setup can only handle so much load. When
 `
     }
   }
+
+  componentWillMount(){
+
+  }
   
   render() {
     
