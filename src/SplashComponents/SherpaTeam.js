@@ -14,16 +14,16 @@ export default function SherpaTeam (props) {
   	        <h4><b>Quin Kinser</b></h4>
   	        <div className="team-social">
   	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="twitter"/></a>
-  	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="linkedin"/></a>
+  	          <a className="social-icon" href="https://www.linkedin.com/in/quinkinser"><FontAwesome name="linkedin"/></a>
   	        </div>
   	      </Col>
-  	      
+
   	      <Col className="centered" xs={6} md={3}>
   	        <Image className="team-images" src="https://avatars3.githubusercontent.com/u/15034841?v=3&s=460" circle />
   	        <h4><b>Wayne Adams</b></h4>
   	        <div className="team-social">
   	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="twitter"/></a>
-  	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="linkedin"/></a>
+  	          <a className="social-icon" href="https://www.linkedin.com/in/wayneladams"><FontAwesome name="linkedin"/></a>
   	        </div>
   	      </Col>
   	      <Col className="centered" xs={6} md={3}>
@@ -31,7 +31,7 @@ export default function SherpaTeam (props) {
   	        <h4><b>Abraham Paniagua</b></h4>
   	        <div className="team-social">
   	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="twitter"/></a>
-  	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="linkedin"/></a>
+  	          <a className="social-icon" href="https://www.linkedin.com/in/abrahampaniagua"><FontAwesome name="linkedin"/></a>
   	        </div>
   	      </Col>
   	      <Col className="centered" xs={6} md={3}>
@@ -39,7 +39,7 @@ export default function SherpaTeam (props) {
   	        <h4><b>Jeremy Toce</b></h4>
   	        <div className="team-social">
   	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="twitter"/></a>
-  	          <a className="social-icon" href="https://twitter.com/scalingsherpa"><FontAwesome name="linkedin"/></a>
+  	          <a className="social-icon" href="https://www.linkedin.com/in/jeremytoce"><FontAwesome name="linkedin"/></a>
   	        </div>
   	      </Col>
   	    </Row>
@@ -48,5 +48,5 @@ export default function SherpaTeam (props) {
 
     </div>
   )
-}  
+}
 

@@ -3,14 +3,14 @@ import {Navbar, Nav, NavItem, MenuItem, NavDropdown, FormGroup, FormControl, But
 import {Link} from 'react-router';
 
 export default class SplashHeader extends React.Component {
-  
+
   constructor() {
     super();
     this.state = {};
   }
 
   render() {
-    
+
     return (
       <Navbar>
         <Nav pullLeft>
