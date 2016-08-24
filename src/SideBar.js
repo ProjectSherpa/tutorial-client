@@ -112,10 +112,11 @@ export default class SideBar extends React.Component {
     var check = lessons.indexOf(lid);
     if (check === -1) {
       lessons.push(lid);
-    } else {
-      this.state.lessons[lid] = "button-left";
-      lessons.splice(check, 1);
-    }
+    } 
+    // else {
+    //   this.state.lessons[lid] = "button-left";
+    //   lessons.splice(check, 1);
+    // }
     this.displayLessons();
     this.calculateCompletion();
  
