@@ -24,10 +24,10 @@ export default class SplashHeader extends React.Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <li>
-                <a href="http://www.avalanche.scalabilitysherpa.com"><h4>Avalanche.io</h4></a>
+                <a href="http://avalanche.scalabilitysherpa.com"><h4>Avalanche.io</h4></a>
               </li>
               <li>
-                <a href="http://www.blog.scalabilitysherpa.com"><h4>Forums</h4></a>
+                <a href="http://blog.scalabilitysherpa.com"><h4>Forums</h4></a>
               </li>
               <li>
                 <Link to="/login"><Button bsStyle="success">Explore the Curriculum</Button></Link>
