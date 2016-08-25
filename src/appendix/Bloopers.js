@@ -14,12 +14,12 @@ export default class Bloopers extends React.Component {
   }
 
   render() {
-    if(!session.loggedIn) {
-      return(
+    if (!session.loggedIn) {
+      return (
         <LockedContent />
       )
     }
-    
+
     return (
       <div className="post">
         <h2>Bloopers</h2>

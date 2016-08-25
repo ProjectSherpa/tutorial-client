@@ -1,11 +1,9 @@
-import React, { PropTypes } from 'react';
-
-import Video from '../Video';
-import RenderMarkdown from '../RenderMarkdown';
+import React from 'react'
+import RenderMarkdown from '../RenderMarkdown'
 
 export default class BeforeStart extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
       code: `
 Having to scale is about the best problem your app can have. It means success. Unfortunately, along with this success comes comes overloaded servers, performance degradation, and even complete server crashes or system failures. That is, if you haven't prepared. The art of scalable architecture is walking the fine line between maintaing performance under load (increased users, etc) and not over-engineering something that doesn't need it. Complex scalable architectures implemented by snapchat or ebay probably don't apply to your app. Scalability costs money and time, so there is no perfect answer. Understanding this, and preparing accordingly will save your company. Don't add complexity unless it is warranted.
@@ -23,17 +21,12 @@ At a high level, we understand that our setup can only handle so much load. When
     }
   }
 
-  componentWillMount(){
-
-  }
-  
-  render() {
-    
+  render () {
     return (
       <div className="post">
         <h1>A Note Before You Begin</h1>
         <RenderMarkdown markdown={this.state.code} />
       </div>
-    );
+    )
   }
 }

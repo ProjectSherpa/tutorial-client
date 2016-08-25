@@ -1,21 +1,18 @@
-import React, { PropTypes } from 'react';
-
-import Video from '../Video';
-import RenderMarkdown from '../RenderMarkdown';
-
-var session = require('../../www/assets.js');
-import LockedContent from '../LockedContent';
+import React from 'react'
+import LockedContent from '../LockedContent'
 
 export default class WhatsNext extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
     }
   }
   
+   
   render() {
-    if(true) {
-      return(
+    //todo: hardcoded logic need fix
+    if (true) {
+      return (
         <LockedContent />
       )
     }
