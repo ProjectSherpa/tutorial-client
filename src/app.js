@@ -90,6 +90,7 @@ export default class App extends React.Component {
 
     this.state = {
       currentLesson: 1,
+      /// Lesson Container contains routing logic
       lessonContainer: {
         0: "/basecamp/welcome",
         1: "/basecamp/welcome",
