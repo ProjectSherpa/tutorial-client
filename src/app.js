@@ -64,11 +64,14 @@ import BetaLogin from './SplashComponents/BetaLogin';
 
 export default class Splash extends React.Component {
   constructor(props) {
-    super(props);   
+    super(props); 
+
   }
 
 
+
   render() {
+
     return (
       <div>
         <SplashHeader /> 
@@ -84,23 +87,76 @@ export default class Splash extends React.Component {
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      currentLesson: 1,
+      lessonContainer: {
+        1: "/basecamp/welcome",
+        2: "/basecamp/resources",
+        3: "/basecamp/note",
+        4: "/gettingstarted/resources",
+        5: "/gettingstarted/intro",
+        6: "/gettingstarted/codealong1",
+        7: "/gettingstarted/codealong2",
+        8: "/gettingstarted/codealong3",
+        9: "/gettingstarted/wrapup",
+        10: "/vertical/resources",
+        11: "/vertical/overview",
+        12: "/vertical/action",
+        13: "/vertical/challenge",
+        14: "/vertical/wrapup",
+        15: "/isolation/resources",
+        16: "/isolation/overview",
+        17: "/isolation/scenario",
+        18: "/isolation/solution",
+        19: "/isolation/wrapup",
+        20: "/content/resources",
+        21: "/content/overview",
+        22: "/content/scenario",
+        23: "/content/solution1",
+        24: "/content/solution2",
+        25:"/content/wrapup",
+        26: "/conclusion/wrapup",
+        27: "/conclusion/resources",
+        28: "/conclusion/whatsnext",
+        29: "/appendix/mysql",
+        30: "/appendix/vagrant1",
+        31: "/appendix/vagrant2",
+        32: "/appendix/bloopers"
+      }
+    } ; 
+
+    this.setCurrentLesson = this.setCurrentLesson.bind(this);
+  }
+
+  setCurrentLesson(lid) {
+    this.setState({
+      currentLesson: lid
+    });
+    console.log(lid)
   }
 
   render() {
     return (
       <div>
         <div className="page-content">
-  	      <Col xs={4} md={3} className="sidebar">
-  	        <SideBar />
-  	      </Col>
-  	      <Col xs={8} md={9} className="content-body">
-            {/*<ContentContainer />*/}
-  	        <div className="post-body">
-  	          {this.props.children}
-  	        </div>
-  	      </Col>
+          <Col xs={4} md={3} className="sidebar">
+            <SideBar 
+            setCurrentLesson = {this.setCurrentLesson}
+            />
+          </Col>
+          <Col xs={8} md={9} className="content-body">
+            <ContentContainer 
+              currentLesson = {this.state.currentLesson}
+              lessonContainer = {this.state.lessonContainer}
+              setCurrentLesson = {this.setCurrentLesson}
+            />
+            <div className="post-body">
+              {this.props.children}
+            </div>
+          </Col>
         </div>
-		  </div>
+      </div>
     );
   }
 }
@@ -226,8 +282,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('mount')
   );
 });
-
-
 
 
 
