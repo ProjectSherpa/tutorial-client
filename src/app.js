@@ -91,6 +91,7 @@ export default class App extends React.Component {
     this.state = {
       currentLesson: 1,
       lessonContainer: {
+        0: "/basecamp/welcome",
         1: "/basecamp/welcome",
         2: "/basecamp/resources",
         3: "/basecamp/note",
