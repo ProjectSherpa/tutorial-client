@@ -7,6 +7,7 @@ import FAQ from './FAQ';
 import Reviews from './Reviews';
 import VideoPanel from './VideoPanel';
 import EnterNow from './EnterNow';
+import AvalanchePanel from './AvalanchePanel';
 
 
 export default function SplashContent (props) {
@@ -15,6 +16,7 @@ export default function SplashContent (props) {
       <VideoPanel />
       <LearnThis />
       <EnterNow />
+      <AvalanchePanel />
       <SherpaTeam />
       <FAQ />
       <EnterNow />

@@ -3,14 +3,14 @@ import {Navbar, Nav, NavItem, MenuItem, NavDropdown, FormGroup, FormControl, But
 import {Link} from 'react-router';
 
 export default class SplashHeader extends React.Component {
-  
+
   constructor() {
     super();
     this.state = {};
   }
 
   render() {
-    
+
     return (
       <Navbar>
         <Nav pullLeft>
@@ -23,9 +23,15 @@ export default class SplashHeader extends React.Component {
         </Nav>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem>
+              <li>
+                <a href="http://avalanche.scalabilitysherpa.com"><h4>Avalanche.io</h4></a>
+              </li>
+              <li>
+                <a href="http://blog.scalabilitysherpa.com"><h4>Forums</h4></a>
+              </li>
+              <li>
                 <Link to="/login"><Button bsStyle="success">Explore the Curriculum</Button></Link>
-              </NavItem>
+              </li>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
