@@ -1,11 +1,9 @@
-import React, { PropTypes } from 'react';
-
-import Video from '../Video';
-import RenderMarkdown from '../RenderMarkdown';
+import React from 'react'
+import RenderMarkdown from '../RenderMarkdown'
 
 export default class BasecampResources extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       code: `
 # Project Sherpa 
@@ -46,14 +44,13 @@ The following tools are used to teach scalibility.
 [DigitalOcean]: <https://digitalocean.com/>`
     }
   }
-  
-  render() {
-    
+
+  render () {
     return (
       <div className="post">
         <h2>Basecamp Resources</h2>
         <RenderMarkdown markdown={this.state.code} />
       </div>
-    );
+    )
   }
 }
