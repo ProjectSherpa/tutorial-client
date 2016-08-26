@@ -105,6 +105,7 @@ body {
   border-color: #f7f3f3;
   border-radius: 0px;
   background-color:
+  font-weight: 300;
 }
 
 .indent {
@@ -211,7 +212,8 @@ body {
 }
 
 .lesson-completed {
-  background-color: #5CB85C;
+  background-color: rgba(92,184,92,.45);
+  font-weight: 600;
 }
 .lesson-incomplete {
 
