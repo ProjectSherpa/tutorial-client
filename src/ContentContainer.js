@@ -15,17 +15,17 @@ export default function ContentContainer (props) {
 
   return (
 
-    <div>
+    <div className="prev-next-container">
 
-      <Link to={prevLesson}>
+      <Link to={prevLesson} className="prev-next">
         <Button className="prev-next-buttons" onClick={() => { props.setCurrentLesson(lessonMinus)}}> 
         <span className="glyphicon glyphicon-menu-left" aria-hidden="true"> </span>   
-			Previous Lesson
-		</Button>
+    			Previous Lesson
+    		</Button>
       </Link>
-      <Link to={nextLesson}>
+      <Link to={nextLesson} className="prev-next">
         <Button className="prev-next-buttons" onClick={() => { props.setCurrentLesson(lessonPlus)}}>
-         	Next Lesson   
+         	Mark Complete and Continue  
         <span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
         </Button>
         </Link>
