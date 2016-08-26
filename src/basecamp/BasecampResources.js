@@ -6,7 +6,7 @@ export default class BasecampResources extends React.Component {
     super(props)
     this.state = {
       code: `
-# Project Sherpa 
+# Basecamp Resources
 
 Scaling web projects shouldn't be difficult. We are providing a step by step tutorial on how to effectively scale projects. 
 
@@ -48,7 +48,6 @@ The following tools are used to teach scalibility.
   render () {
     return (
       <div className="post">
-        <h2>Basecamp Resources</h2>
         <RenderMarkdown markdown={this.state.code} />
       </div>
     )

@@ -5,7 +5,6 @@ import {Col} from 'react-bootstrap';
 
 // Persistent Components
 import ContentContainer from './ContentContainer';
-import Header from './Header';
 import SideBar from './SideBar';
 
 // Basecamp Components
