@@ -61,7 +61,7 @@ export default class SideBar extends React.Component {
     
           <Button>
             <span>Scalability Course Progress</span>
-            <ProgressBar  bsStyle="success" now={this.state.completionPercentage} label={`${this.state.completionPercentage}%`} />
+            <ProgressBar  bsStyle="success" now={this.props.completionPercentage} label={`${this.props.completionPercentage}%`} />
           </Button>
 
           <Panel collapsible defaultExpanded header="Basecamp" className="panel-headings">
