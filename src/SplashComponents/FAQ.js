@@ -1,7 +1,8 @@
 import React from 'react'
 export default function FAQ (props) {
   return (
-    <div className="faq">
+    <div className="faq colored-panel">
+      <br/>
       <h1 className="splash-header faq-header">FAQ</h1>
       <div>
         <h1 className="splash-header sub-header">How is the course formatted?</h1>
@@ -21,6 +22,7 @@ export default function FAQ (props) {
           <p>Lots! Scalability concepts won't help you much if you can't code them into existence. You'll learn how to use many new tools and you'll write a lot of code to solidify what you learn in the lessons.</p>
         </div>
       </div>
+      <br/>
 
     </div>
   )
