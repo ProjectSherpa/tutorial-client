@@ -17,11 +17,11 @@ export default function SplashContent (props) {
       <VideoPanel />
       <LearnThis />
       <EnterNow />
-      <AvalanchePanel />
       <SherpaTeam />
+      <AvalanchePanel />
       <FAQ />
-      <EnterNow />
       <Pricing />
+      <EnterNow />
       <Reviews />
       <ForkMe />
     </div>

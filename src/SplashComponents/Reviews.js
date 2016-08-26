@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import {Col, Row} from 'react-bootstrap';
 export default function Reviews (props) {
   return (
-    <div className="reviews">
+    <div className="reviews colored-panel">
       <hr/>
       <br/>
       <h1 className="splash-header review-header">Who's Scaling?</h1>

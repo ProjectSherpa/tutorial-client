@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 export default function Pricing (props) {
   return (
-    <div className="colored-panel">
+    <div >
       <br/>
       <h1 className="splash-header faq-header">Pricing</h1>
       <div>
