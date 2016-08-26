@@ -65,11 +65,7 @@ import BetaLogin from './SplashComponents/BetaLogin';
 export default class Splash extends React.Component {
   constructor(props) {
     super(props); 
-
   }
-
-
-
   render() {
 
     return (
@@ -90,7 +86,18 @@ export default class App extends React.Component {
 
     this.state = {
       currentLesson: 1,
-      /// Lesson Container contains routing logic
+      complete: "button-left lesson-completed",
+      incomplete: "button-left",
+      lessonCount: 32,
+      completionPercentage: 0,
+      user: {
+        "userid": 1,
+        "first": "Quin",
+        "last": "Kinser",
+        "email": "quinkinser@gmail.com",
+        "username": "quink",
+        "lessonsCompleted": []
+      },
       lessonContainer: {
         0: "/basecamp/welcome",
         1: "/basecamp/welcome",
@@ -125,17 +132,76 @@ export default class App extends React.Component {
         30: "/appendix/vagrant1",
         31: "/appendix/vagrant2",
         32: "/appendix/bloopers"
+      },
+      lessons: {
+        1: "button-left",
+        2: "button-left",
+        3: "button-left",
+        4: "button-left",
+        5: "button-left",
+        6: "button-left",
+        7: "button-left",
+        8: "button-left",
+        9: "button-left",
+        10: "button-left",
+        11: "button-left",
+        12: "button-left",
+        13: "button-left",
+        14: "button-left",
+        15: "button-left",
+        16: "button-left",
+        17: "button-left",
+        18: "button-left",
+        19: "button-left",
+        20: "button-left",
+        21: "button-left",
+        22: "button-left",
+        23: "button-left",
+        24: "button-left",
+        25: "button-left",
+        26: "button-left",
+        27: "button-left",
+        28: "button-left",
+        29: "button-left",
+        30: "button-left",
+        31: "button-left",
+        32: "button-left",
       }
     } ; 
 
     this.setCurrentLesson = this.setCurrentLesson.bind(this);
+    this.completeCurrentLesson = this.completeCurrentLesson.bind(this);
+    this.displayLessons = this.displayLessons.bind(this);
+    this.calculateCompletion = this.calculateCompletion.bind(this);
+
   }
 
   setCurrentLesson(lid) {
     this.setState({
       currentLesson: lid
     });
-    console.log(lid)
+  }
+
+  completeCurrentLesson(lid) {
+    //complete current lesson
+    if (this.state.user.lessonsCompleted.indexOf(lid) === -1) {
+      this.state.user.lessonsCompleted.push(lid);
+    }
+    console.log("Lessons Completed: ", this.state.user.lessonsCompleted);
+    this.setCurrentLesson(lid + 1);
+    this.displayLessons();
+    this.calculateCompletion();
+  }
+
+  calculateCompletion() {
+    this.state.completionPercentage = Math.floor((this.state.user.lessonsCompleted.length / this.state.lessonCount) * 100);
+  }
+
+  displayLessons() {
+    var userLessons = this.state.user.lessonsCompleted;
+    for (var i = 0; i < userLessons.length; i++) {
+      this.state.lessons[userLessons[i]] = "button-left lesson-completed";
+    }
   }
 
   render() {
@@ -145,6 +211,13 @@ export default class App extends React.Component {
           <Col xs={4} md={3} className="sidebar">
             <SideBar 
             setCurrentLesson = {this.setCurrentLesson}
+            lessons={this.state.lessons}
+            lessonsCompleted={this.state.user.lessonsCompleted}
+            user={this.state.user}
+            lessonCount={this.state.lessonCount}
+            completionPercentage={this.state.completionPercentage}
+            displayLessons={this.displayLessons}
+            calculateCompletion={this.calculateCompletion}
             />
           </Col>
           <Col xs={8} md={9} className="content-body">
@@ -152,6 +225,7 @@ export default class App extends React.Component {
               currentLesson = {this.state.currentLesson}
               lessonContainer = {this.state.lessonContainer}
               setCurrentLesson = {this.setCurrentLesson}
+              completeCurrentLesson={this.completeCurrentLesson}
             />
             <div className="post-body">
               {this.props.children}

@@ -13,8 +13,6 @@ export default class IsolationWrapup extends React.Component {
     }
   }
   
-   
-
   render() {
     if(true) {
       return(
