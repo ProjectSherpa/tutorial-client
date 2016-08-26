@@ -5,7 +5,6 @@ import {Link} from 'react-router';
 export default function ContentContainer (props) {
 	
 	var currentLesson = props.currentLesson;
-	console.log(currentLesson)
 	var prevLesson = props.lessonContainer[props.currentLesson-1];
 	var nextLesson = props.lessonContainer[props.currentLesson+1];
 
@@ -24,7 +23,7 @@ export default function ContentContainer (props) {
     		</Button>
       </Link>
       <Link to={nextLesson} className="prev-next">
-        <Button className="prev-next-buttons" onClick={() => { props.setCurrentLesson(lessonPlus)}}>
+        <Button className="prev-next-buttons" onClick={() => { props.completeCurrentLesson(currentLesson)}}>
          	Mark Complete and Continue  
         <span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
         </Button>
