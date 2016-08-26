@@ -212,7 +212,7 @@ body {
 }
 
 .lesson-completed {
-  background-color: rgba(92,184,92,.45);
+  background-color: rgba(92,184,92,.7);
   font-weight: 600;
 }
 .lesson-incomplete {
@@ -265,4 +265,14 @@ body {
 /*Markdown Images*/
 img[alt="MacDown logo"] {
   width: 100%;
+}
+
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wide-over {
+  width: 90%;
 }
