@@ -252,6 +252,14 @@ body {
   font-weight: 300;
 }
 
+/*Prev-next buttons*/
+.prev-next-container {
+  display: flex;
+}
+.prev-next {
+  width: 50%;
+}
+
 /*Markdown Images*/
 img[alt="MacDown logo"] {
   width: 100%;
