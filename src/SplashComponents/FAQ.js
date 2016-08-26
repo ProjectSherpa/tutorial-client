@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 export default function FAQ (props) {
   return (
     <div className="faq">
@@ -21,8 +21,9 @@ export default function FAQ (props) {
           <p>Lots! Scalability concepts won't help you much if you can't code them into existence. You'll learn how to use many new tools and you'll write a lot of code to solidify what you learn in the lessons.</p>
         </div>
       </div>
+
     </div>
   )
-}  
+}
 
-    
+

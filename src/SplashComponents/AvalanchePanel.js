@@ -1,6 +1,5 @@
-import React, { PropTypes } from 'react';
-import Video from '../Video';
-import {Row, Col} from 'react-bootstrap';
+import React from 'react'
+import {Row, Col} from 'react-bootstrap'
 
 export default function AvalanchePanel (props) {
   return (
@@ -35,4 +34,4 @@ export default function AvalanchePanel (props) {
       </div>
     </Row>
   )
-}  
+}
