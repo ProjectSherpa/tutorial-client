@@ -12,9 +12,9 @@ export default function AvalanchePanel (props) {
           <div>
             <video id="example_video_1" className="video-js vjs-default-skin splash-video"
               controls preload="auto" width="1080" height="620"
-              poster=""
+              poster="https://s3-us-west-1.amazonaws.com/scalibilitysherpa/ezgif.com-resize.gif"
               data-setup='{"example_option":true}'>
-              <source src="" type='video/mp4' />
+              <source src="https://s3-us-west-1.amazonaws.com/www.scalabilitysherpa.com/00+-+intro/00+-+IntroToScalability4k.mp4" type='video/mp4' />
             </video>
           </div>
           <br/>

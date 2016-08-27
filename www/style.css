@@ -276,3 +276,7 @@ img[alt="MacDown logo"] {
 .wide-over {
   width: 90%;
 }
+
+.vjs-big-play-button {
+  display: none !important;
+}
