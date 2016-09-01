@@ -23,11 +23,10 @@ export default function AvalanchePanel (props) {
         <Col md={5}>
           <br/>
           <br/>
-          <h1 className="splash-header video-header">Avalanche, by Avalanche.</h1>
+          <h1 className="splash-header video-header">Test Your Architecture</h1>
           <div className="faq-p">
-            <p><strong>Avalanche!!!</strong> is the first and only Avalanche!!! dedicated to the practice of developing highly-scalable and reliable architectural systems.</p>
-            <p>We cover what you need to know in order to solve your scaling problems <strong>today</strong>. </p>
-            <p>This course is designed by Avalanches!!!, for Avalanches!!!. </p>
+            <p>The <strong>Avalanche Testing Tool</strong> was developed for users to simulate traffic peaks and determine the efficacy of their system architecture.</p>
+            <p>Use Avalanche during the course as a metric of scalability success, or as a standalone load tester to determine the bottlenecks on your deployed website.</p>
           </div>
         </Col>
         <Col md={1}></Col>
