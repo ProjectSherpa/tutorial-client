@@ -61,15 +61,15 @@ import Signup from './SplashComponents/Signup';
 import Login from './SplashComponents/Login';
 import BetaLogin from './SplashComponents/BetaLogin';
 
-export default class Splash extends React.Component {
+export class Splash extends React.Component {
   constructor(props) {
-    super(props); 
+    super(props);
   }
   render() {
 
     return (
       <div>
-        <SplashHeader /> 
+        <SplashHeader />
         <div className="splash-body">
           {this.props.children}
         </div>
@@ -166,7 +166,7 @@ export default class App extends React.Component {
         31: "button-left",
         32: "button-left",
       }
-    } ; 
+    } ;
 
     this.setCurrentLesson = this.setCurrentLesson.bind(this);
     this.completeCurrentLesson = this.completeCurrentLesson.bind(this);
@@ -208,7 +208,7 @@ export default class App extends React.Component {
       <div>
         <div className="page-content">
           <Col xs={4} md={3} className="sidebar">
-            <SideBar 
+            <SideBar
             setCurrentLesson = {this.setCurrentLesson}
             lessons={this.state.lessons}
             lessonsCompleted={this.state.user.lessonsCompleted}
@@ -220,7 +220,7 @@ export default class App extends React.Component {
             />
           </Col>
           <Col xs={8} md={9} className="content-body">
-            <ContentContainer 
+            <ContentContainer
               currentLesson = {this.state.currentLesson}
               lessonContainer = {this.state.lessonContainer}
               setCurrentLesson = {this.setCurrentLesson}
